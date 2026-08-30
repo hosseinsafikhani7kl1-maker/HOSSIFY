@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 760" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dashBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a" />
+      <stop offset="50%" stop-color="#070a14" />
+      <stop offset="100%" stop-color="#03050a" />
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <!-- Card 1: Cyan/Teal (تاسیسات) -->
+    <linearGradient id="cardCyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d2830" />
+      <stop offset="100%" stop-color="#091b22" />
+    </linearGradient>
+
+    <!-- Card 2: Blue (ناوگان) -->
+    <linearGradient id="cardBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2238" />
+      <stop offset="100%" stop-color="#091524" />
+    </linearGradient>
+
+    <!-- Card 3: Purple/Maroon (هشدار) -->
+    <linearGradient id="cardPurpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a0f20" />
+      <stop offset="100%" stop-color="#1c0a15" />
+    </linearGradient>
+
+    <!-- Card 4: Gold/Amber (اقساط) -->
+    <linearGradient id="cardGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1e0b" />
+      <stop offset="100%" stop-color="#1a1206" />
+    </linearGradient>
+
+    <filter id="dashCardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="360" height="760" rx="36" fill="url(#dashBgGrad)" stroke="#1e293b" stroke-width="3" />
+
+  <!-- Top System Status Bar -->
+  <g fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">
+    <text x="24" y="28" font-weight="bold">19:33</text>
+    <g transform="translate(280, 16)">
+      <circle cx="6" cy="7" r="3" fill="#94a3b8" />
+      <path d="M 14,3 L 20,11 M 24,5 L 30,11" stroke="#94a3b8" stroke-width="1.5" />
+      <rect x="36" y="2" width="16" height="9" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.2" />
+      <rect x="38" y="4" width="9" height="5" rx="1" fill="#94a3b8" />
+    </g>
+  </g>
+
+  <!-- Top App Navigation Header Bar -->
+  <g transform="translate(14, 40)">
+    <!-- Bell Notification Button -->
+    <rect width="34" height="34" rx="10" fill="#1e1810" stroke="#452a0a" stroke-width="1" />
+    <path d="M 13,11 C 13,9 21,9 21,11 C 21,15 24,18 24,20 L 10,20 C 10,18 13,15 13,11 Z M 15,22 C 15,23.5 19,23.5 19,22" fill="none" stroke="#f59e0b" stroke-width="1.5" />
+
+    <!-- Grid Menu Button -->
+    <rect x="42" y="0" width="38" height="34" rx="10" fill="#131c2e" stroke="#1f2d48" stroke-width="1" />
+    <!-- 4 Dots Icon -->
+    <rect x="52" y="9" width="6" height="6" rx="1.5" fill="#94a3b8" />
+    <rect x="62" y="9" width="6" height="6" rx="1.5" fill="#94a3b8" />
+    <rect x="52" y="19" width="6" height="6" rx="1.5" fill="#94a3b8" />
+    <rect x="62" y="19" width="6" height="6" rx="1.5" fill="#94a3b8" />
+
+    <!-- Sun / Theme Toggle Button -->
+    <rect x="88" y="0" width="36" height="34" rx="10" fill="#131c2e" stroke="#ca8a04" stroke-width="1" />
+    <circle cx="106" cy="17" r="5" fill="none" stroke="#fde047" stroke-width="1.5" />
+    <line x1="106" y1="8" x2="106" y2="10" stroke="#fde047" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="106" y1="24" x2="106" y2="26" stroke="#fde047" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="97" y1="17" x2="99" y2="17" stroke="#fde047" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="113" y1="17" x2="115" y2="17" stroke="#fde047" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Search Input Box -->
+    <g transform="translate(130, 0)">
+      <rect width="144" height="34" rx="10" fill="#101726" stroke="#1c2842" stroke-width="1" />
+      <text x="12" y="21" fill="#475569" font-family="system-ui, sans-serif" font-size="10.5">🔍 جستجوی سریع...</text>
+    </g>
+
+    <!-- User Profile Badge (LK) -->
+    <g transform="translate(282, 0)">
+      <rect width="38" height="34" rx="10" fill="#f59e0b" />
+      <text x="19" y="22" fill="#000000" font-family="system-ui, sans-serif" font-weight="900" font-size="12" text-anchor="middle">LK</text>
+    </g>
+  </g>
+
+  <!-- Main 4 Key Metrics (2x2 Grid) -->
+  <g transform="translate(14, 90)">
+    
+    <!-- Top Left Card: تأسیسات (Cyan) -->
+    <g transform="translate(0, 0)" filter="url(#dashCardShadow)">
+      <rect width="160" height="92" rx="14" fill="url(#cardCyanGrad)" stroke="#0e3f4d" stroke-width="1" />
+      <g transform="translate(10, 10)">
+        <rect x="0" y="0" width="46" height="18" rx="5" fill="#0c4a6e" />
+        <text x="23" y="12" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="middle">تأسیسات</text>
+
+        <!-- Icon -->
+        <rect x="108" y="0" width="30" height="30" rx="8" fill="#0e4354" />
+        <text x="123" y="20" fill="#22d3ee" font-size="13" text-anchor="middle">🏠</text>
+
+        <text x="138" y="52" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="18" text-anchor="end">۲</text>
+        <text x="138" y="70" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="9" text-anchor="end">تجهیزات تحت پایش</text>
+      </g>
+    </g>
+
+    <!-- Top Right Card: ناوگان (Blue) -->
+    <g transform="translate(172, 0)" filter="url(#dashCardShadow)">
+      <rect width="160" height="92" rx="14" fill="url(#cardBlueGrad)" stroke="#1e3a5f" stroke-width="1" />
+      <g transform="translate(10, 10)">
+        <rect x="0" y="0" width="42" height="18" rx="5" fill="#1e3a8a" />
+        <text x="21" y="12" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="middle">ناوگان</text>
+
+        <!-- Icon -->
+        <rect x="108" y="0" width="30" height="30" rx="8" fill="#173153" />
+        <text x="123" y="20" fill="#60a5fa" font-size="13" text-anchor="middle">🚗</text>
+
+        <text x="138" y="52" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="18" text-anchor="end">۱</text>
+        <text x="138" y="70" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="9" text-anchor="end">وسایل نقلیه فعال</text>
+      </g>
+    </g>
+
+    <!-- Bottom Left Card: هشدار (Purple/Maroon) -->
+    <g transform="translate(0, 102)" filter="url(#dashCardShadow)">
+      <rect width="160" height="92" rx="14" fill="url(#cardPurpleGrad)" stroke="#4a1532" stroke-width="1" />
+      <g transform="translate(10, 10)">
+        <rect x="0" y="0" width="40" height="18" rx="5" fill="#701a75" />
+        <text x="20" y="12" fill="#f472b6" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="middle">هشدار</text>
+
+        <!-- Icon -->
+        <rect x="108" y="0" width="30" height="30" rx="8" fill="#42132e" />
+        <text x="123" y="20" fill="#f472b6" font-size="13" text-anchor="middle">⚠️</text>
+
+        <text x="138" y="52" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="18" text-anchor="end">۳</text>
+        <text x="138" y="70" fill="#fbcfe8" font-family="system-ui, sans-serif" font-size="9" text-anchor="end">سررسیدهای فنی فعال</text>
+      </g>
+    </g>
+
+    <!-- Bottom Right Card: اقساط (Amber/Gold) -->
+    <g transform="translate(172, 102)" filter="url(#dashCardShadow)">
+      <rect width="160" height="92" rx="14" fill="url(#cardGoldGrad)" stroke="#523912" stroke-width="1" />
+      <g transform="translate(10, 10)">
+        <rect x="0" y="0" width="40" height="18" rx="5" fill="#78350f" />
+        <text x="20" y="12" fill="#fde047" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="middle">اقساط</text>
+
+        <!-- Icon -->
+        <rect x="108" y="0" width="30" height="30" rx="8" fill="#3b2708" />
+        <text x="123" y="20" fill="#fbbf24" font-size="13" text-anchor="middle">💳</text>
+
+        <text x="138" y="52" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="18" text-anchor="end">۲</text>
+        <text x="138" y="70" fill="#fde68a" font-family="system-ui, sans-serif" font-size="9" text-anchor="end">تعهدات و وام‌های جاری</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Middle Card: آنالیز مخارج و هزینه‌های استهلاک -->
+  <g transform="translate(14, 296)" filter="url(#dashCardShadow)">
+    <rect width="332" height="135" rx="16" fill="#0f1728" stroke="#1d293d" stroke-width="1.2" />
+    <g transform="translate(16, 14)">
+      <rect x="270" y="0" width="30" height="30" rx="8" fill="#1e293b" />
+      <text x="285" y="20" fill="#60a5fa" font-size="14" text-anchor="middle">📊</text>
+
+      <text x="258" y="14" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" text-anchor="end">آنالیز مخارج و هزینه‌های استهلاک</text>
+      <text x="258" y="28" fill="#64748b" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="end">ثبت و پایش هزینه‌های دوره‌ای، سرویس‌ها و قطعات مصرفی</text>
+
+      <!-- Empty state / chart line -->
+      <g transform="translate(0, 48)">
+        <rect width="300" height="50" rx="10" fill="#0b111c" />
+        <text x="150" y="30" fill="#475569" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">اطلاعاتی برای ترسیم نمودار ثبت نشده است.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Card: مخارج ماهانه ۲۱ ماه اخیر (نمودار ستونی) -->
+  <g transform="translate(14, 442)" filter="url(#dashCardShadow)">
+    <rect width="332" height="280" rx="18" fill="#0f1728" stroke="#1d293d" stroke-width="1.2" />
+    <g transform="translate(16, 14)">
+      
+      <rect x="250" y="0" width="50" height="22" rx="6" fill="#064e3b" />
+      <text x="275" y="15" fill="#34d399" font-family="system-ui, sans-serif" font-weight="bold" font-size="8.5" text-anchor="middle">نمودار ستونی</text>
+
+      <text x="240" y="16" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11.5" text-anchor="end">مخارج ماهانه ۲۱ ماه اخیر</text>
+      <text x="300" y="34" fill="#64748b" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="end">گزارش دقیق جامع ۲۱ ماه گذشته بر اساس داده‌های ثبت شده</text>
+
+      <!-- KPI 3 Summary Pills -->
+      <g transform="translate(0, 50)">
+        <!-- Pill 1: مجموع ۲۱ ماه -->
+        <rect x="194" y="0" width="106" height="42" rx="8" fill="#09121f" stroke="#172538" stroke-width="1" />
+        <text x="247" y="16" fill="#64748b" font-family="system-ui, sans-serif" font-size="8" text-anchor="middle">مجموع ۲۱ ماه</text>
+        <text x="247" y="32" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">۰ تومان</text>
+
+        <!-- Pill 2: میانگین ماهانه -->
+        <rect x="94" y="0" width="94" height="42" rx="8" fill="#09121f" stroke="#172538" stroke-width="1" />
+        <text x="141" y="16" fill="#64748b" font-family="system-ui, sans-serif" font-size="8" text-anchor="middle">میانگین ماهانه</text>
+        <text x="141" y="32" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">۰ تومان</text>
+
+        <!-- Pill 3: بیشترین ماه -->
+        <rect x="0" y="0" width="88" height="42" rx="8" fill="#09121f" stroke="#172538" stroke-width="1" />
+        <text x="44" y="16" fill="#64748b" font-family="system-ui, sans-serif" font-size="8" text-anchor="middle">بیشترین ماه</text>
+        <text x="44" y="32" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="10" text-anchor="middle">ثبت نشده</text>
+      </g>
+
+      <!-- Legend Tags -->
+      <g transform="translate(10, 110)">
+        <!-- Cyan Tag -->
+        <circle cx="280" cy="6" r="4" fill="#38bdf8" />
+        <text x="270" y="9" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8" text-anchor="end">هزینه‌های سرویس</text>
+
+        <!-- Yellow Tag -->
+        <circle cx="160" cy="6" r="4" fill="#f59e0b" />
+        <text x="150" y="9" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8" text-anchor="end">اقساط پرداختی</text>
+      </g>
+
+      <!-- Bar Chart Visualization (21 Bars mockup) -->
+      <g transform="translate(0, 134)">
+        <rect width="300" height="96" rx="8" fill="#080d16" />
+        
+        <!-- Y Grid lines -->
+        <line x1="16" y1="20" x2="284" y2="20" stroke="#1e293b" stroke-dasharray="2 4" />
+        <line x1="16" y1="50" x2="284" y2="50" stroke="#1e293b" stroke-dasharray="2 4" />
+        <line x1="16" y1="80" x2="284" y2="80" stroke="#1e293b" />
+
+        <!-- Mockup dynamic bars -->
+        <rect x="25" y="65" width="8" height="15" rx="2" fill="#38bdf8" opacity="0.8" />
+        <rect x="38" y="55" width="8" height="25" rx="2" fill="#f59e0b" opacity="0.9" />
+        <rect x="51" y="70" width="8" height="10" rx="2" fill="#38bdf8" opacity="0.6" />
+        <rect x="64" y="45" width="8" height="35" rx="2" fill="#f59e0b" opacity="0.8" />
+        <rect x="77" y="60" width="8" height="20" rx="2" fill="#38bdf8" opacity="0.7" />
+        <rect x="90" y="40" width="8" height="40" rx="2" fill="#38bdf8" />
+        <rect x="103" y="50" width="8" height="30" rx="2" fill="#f59e0b" />
+        <rect x="116" y="65" width="8" height="15" rx="2" fill="#38bdf8" opacity="0.6" />
+        <rect x="129" y="30" width="8" height="50" rx="2" fill="#f59e0b" />
+        <rect x="142" y="55" width="8" height="25" rx="2" fill="#38bdf8" />
+        <rect x="155" y="48" width="8" height="32" rx="2" fill="#f59e0b" />
+        <rect x="168" y="68" width="8" height="12" rx="2" fill="#38bdf8" opacity="0.6" />
+        <rect x="181" y="35" width="8" height="45" rx="2" fill="#f59e0b" />
+        <rect x="194" y="58" width="8" height="22" rx="2" fill="#38bdf8" />
+        <rect x="207" y="62" width="8" height="18" rx="2" fill="#f59e0b" />
+        <rect x="220" y="42" width="8" height="38" rx="2" fill="#38bdf8" />
+        <rect x="233" y="50" width="8" height="30" rx="2" fill="#f59e0b" />
+        <rect x="246" y="66" width="8" height="14" rx="2" fill="#38bdf8" />
+        <rect x="259" y="38" width="8" height="42" rx="2" fill="#38bdf8" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Home Indicator -->
+  <rect x="130" y="744" width="100" height="4" rx="2" fill="#475569" />
+</svg>

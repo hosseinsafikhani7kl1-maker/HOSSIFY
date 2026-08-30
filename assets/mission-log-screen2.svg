@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 760" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mlBg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#091424" />
+      <stop offset="50%" stop-color="#050b14" />
+      <stop offset="100%" stop-color="#02050a" />
+    </linearGradient>
+    <linearGradient id="winCard2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#122038" />
+      <stop offset="100%" stop-color="#0a1220" />
+    </linearGradient>
+  </defs>
+
+  <!-- Frame -->
+  <rect width="360" height="760" rx="36" fill="url(#mlBg2)" stroke="#1e293b" stroke-width="3" />
+
+  <!-- Status Bar -->
+  <g fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">
+    <text x="24" y="28" font-weight="bold">09:43</text>
+    <text x="336" y="28" text-anchor="end">4G 98%</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(20, 42)">
+    <text x="0" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="16">تقویم و سوابق عملیاتی (Calendar &amp; History)</text>
+  </g>
+
+  <!-- Month & Year Selector (Persian Calendar Support) -->
+  <g transform="translate(20, 80)">
+    <rect width="320" height="42" rx="10" fill="#0b1322" stroke="#1e3a5f" stroke-width="1" />
+    <text x="160" y="26" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="13">شهریور ۱۴۰۵ • سپتامبر ۲۰۲۶</text>
+    <text x="24" y="26" fill="#38bdf8" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">‹</text>
+    <text x="296" y="26" fill="#38bdf8" font-family="system-ui, sans-serif" font-weight="bold" font-size="14">›</text>
+  </g>
+
+  <!-- Calendar Grid View -->
+  <g transform="translate(20, 132)">
+    <rect width="320" height="230" rx="14" fill="url(#winCard2)" stroke="#1e3a5f" stroke-width="1.2" />
+    
+    <g transform="translate(16, 16)">
+      <!-- Day Headers -->
+      <g fill="#64748b" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">
+        <text x="20" y="10">ش</text>
+        <text x="60" y="10">ی</text>
+        <text x="100" y="10">د</text>
+        <text x="140" y="10">س</text>
+        <text x="180" y="10">چ</text>
+        <text x="220" y="10">پ</text>
+        <text x="260" y="10" fill="#ef4444">ج</text>
+      </g>
+
+      <!-- Calendar Days Matrix -->
+      <!-- Row 1 -->
+      <g font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">
+        <text x="20" y="42">۱</text>
+        <text x="60" y="42">۲</text>
+        <text x="100" y="42">۳</text>
+        <!-- Day 4 Active Mission Badge -->
+        <circle cx="140" cy="38" r="14" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5" />
+        <text x="140" y="42" fill="#ffffff" font-weight="bold">۴</text>
+        
+        <text x="180" y="42">۵</text>
+        <text x="220" y="42">۶</text>
+        <text x="260" y="42" fill="#64748b">۷</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">
+        <text x="20" y="80">۸</text>
+        <!-- Day 9 Rig Test -->
+        <circle cx="60" cy="76" r="14" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+        <text x="60" y="80" fill="#34d399" font-weight="bold">۹</text>
+        
+        <text x="100" y="80">۱۰</text>
+        <text x="140" y="80">۱۱</text>
+        <text x="180" y="80">۱۲</text>
+        <text x="220" y="80">۱۳</text>
+        <text x="260" y="80" fill="#64748b">۱۴</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">
+        <text x="20" y="118">۱۵</text>
+        <text x="60" y="118">۱۶</text>
+        <text x="100" y="118">۱۷</text>
+        <circle cx="140" cy="114" r="14" fill="#78350f" stroke="#f59e0b" stroke-width="1" />
+        <text x="140" y="118" fill="#fcd34d" font-weight="bold">۱۸</text>
+        
+        <text x="180" y="118">۱۹</text>
+        <text x="220" y="118">۲۰</text>
+        <text x="260" y="118" fill="#64748b">۲۱</text>
+      </g>
+
+      <!-- Row 4 -->
+      <g font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#94a3b8">
+        <text x="20" y="156">۲۲</text>
+        <text x="60" y="156">۲۳</text>
+        <text x="100" y="156">۲۴</text>
+        <text x="140" y="156">۲۵</text>
+        <text x="180" y="156">۲۶</text>
+        <text x="220" y="156">۲۷</text>
+        <text x="260" y="156" fill="#64748b">۲۸</text>
+      </g>
+
+      <!-- Legend Indicator -->
+      <g transform="translate(0, 185)" font-family="system-ui, sans-serif" font-size="9.5">
+        <circle cx="10" cy="8" r="4" fill="#38bdf8" />
+        <text x="20" y="12" fill="#cbd5e1">مأموریت فعال</text>
+
+        <circle cx="105" cy="8" r="4" fill="#10b981" />
+        <text x="115" y="12" fill="#cbd5e1">تکمیل شده</text>
+
+        <circle cx="195" cy="8" r="4" fill="#f59e0b" />
+        <text x="205" y="12" fill="#cbd5e1">سرویس تجهیزات</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Detailed Mission Event Card for Selected Day -->
+  <g transform="translate(20, 372)">
+    <rect width="320" height="215" rx="14" fill="url(#winCard2)" stroke="#38bdf8" stroke-width="1.2" />
+    
+    <g transform="translate(16, 16)">
+      <text x="0" y="14" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="13">رویدادهای ۴ شهریور (مأموریت جاری)</text>
+      <rect x="230" y="0" width="58" height="20" rx="6" fill="#0c4a6e" />
+      <text x="259" y="14" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">کد: ML-408</text>
+
+      <!-- Event Details -->
+      <g transform="translate(0, 30)">
+        <rect width="288" height="60" rx="8" fill="#08101c" stroke="#1e293b" stroke-width="1" />
+        <g transform="translate(10, 10)">
+          <text x="0" y="14" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11.5">موقعیت: میدان نفتی اهواز - کلاستر ۳</text>
+          <text x="0" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">شروع: ۰۷:۰۰ صبح • عمق هدف: ۳,۴۵۰ متر • تیم شیفت الف</text>
+        </g>
+      </g>
+
+      <g transform="translate(0, 98)">
+        <rect width="288" height="85" rx="8" fill="#08101c" stroke="#1e293b" stroke-width="1" />
+        <g transform="translate(10, 12)">
+          <text x="0" y="12" fill="#38bdf8" font-family="system-ui, sans-serif" font-weight="bold" font-size="11">تجهیزات متصل به این مأموریت:</text>
+          <text x="0" y="30" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">۱. یونیت لوله‌مغزی سیار ۲ اینچ (Hydra-Rig CT-90)</text>
+          <text x="0" y="48" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">۲. پمپ‌تراک دو محوره سیمان و اسید (Triplex 600 BHP)</text>
+          <text x="0" y="66" fill="#34d399" font-family="system-ui, sans-serif" font-size="9.5">✓ تاییدیه HSE و چک‌لیست ایمنی پیش از شروع تکمیل شد</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 780" width="100%" height="100%">
+  <defs>
+    <linearGradient id="drawerBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="itemBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Frame -->
+  <rect width="380" height="780" rx="36" fill="url(#drawerBg)" stroke="#1e293b" stroke-width="3" />
+  
+  <!-- Status Bar -->
+  <text x="28" y="28" fill="#94a3b8" font-size="11" font-family="sans-serif" font-weight="600">19:44</text>
+  <circle cx="340" cy="24" r="3" fill="#10b981" />
+  <rect x="350" y="20" width="14" height="8" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.5" />
+  <rect x="352" y="22" width="9" height="4" fill="#94a3b8" />
+
+  <!-- Drawer Header -->
+  <g transform="translate(18, 45)">
+    <rect width="344" height="48" rx="10" fill="#182234" stroke="#334155" stroke-width="1" />
+    <text x="328" y="30" fill="#fbbf24" font-size="13" font-family="sans-serif" font-weight="800" text-anchor="end">فهرست ماژول‌ها و ابزارها</text>
+    <rect x="20" y="16" width="60" height="20" rx="6" fill="#334155" />
+    <text x="50" y="29" fill="#94a3b8" font-size="9" text-anchor="middle">۱۲ ماژول فعال</text>
+  </g>
+
+  <!-- Module Items Container with Left Gold Bar (from User's Screenshot) -->
+  <g transform="translate(18, 102)">
+    <!-- Golden Indicator Line on the left border -->
+    <rect x="0" y="0" width="4" height="660" rx="2" fill="url(#goldAccent)" />
+
+    <!-- List of Modules (matching user's screenshot exactly) -->
+    
+    <!-- Item 1: Rig Floor Quick Panel -->
+    <g transform="translate(10, 0)">
+      <rect width="334" height="54" rx="10" fill="url(#itemBg)" stroke="#1e293b" />
+      <circle cx="308" cy="27" r="14" fill="#854d0e" opacity="0.4" />
+      <!-- Lightning Icon -->
+      <path d="M 310,19 L 303,28 L 309,28 L 305,35 L 313,26 L 307,26 Z" fill="#fbbf24" />
+      <text x="286" y="24" fill="#f8fafc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="end">پنل عملیاتی سریع (Rig Floor)</text>
+      <text x="286" y="40" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="end">محاسبات آنی هیدرواستاتیک، احجام و زمان گردش سیال</text>
+      <rect x="12" y="18" width="38" height="18" rx="4" fill="#1e1b4b" />
+      <text x="31" y="30" fill="#818cf8" font-size="8" font-weight="bold" text-anchor="middle">دکل</text>
+    </g>
+
+    <!-- Item 2: BHA & Operations -->
+    <g transform="translate(10, 60)">
+      <rect width="334" height="54" rx="10" fill="url(#itemBg)" stroke="#1e293b" />
+      <circle cx="308" cy="27" r="14" fill="#1e3a8a" opacity="0.4" />
+      <!-- Layers Icon -->
+      <rect x="301" y="21" width="14" height="4" rx="1" fill="#38bdf8" />
+      <rect x="301" y="27" width="14" height="4" rx="1" fill="#38bdf8" />
+      <text x="286" y="24" fill="#f8fafc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="end">مدیریت BHA و عملیات</text>
+      <text x="286" y="40" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="end">چیدمان رشته و بررسی لوبریکاتور فضای مسقف</text>
+      <rect x="12" y="18" width="38" height="18" rx="4" fill="#064e3b" />
+      <text x="31" y="30" fill="#34d399" font-size="8" font-weight="bold" text-anchor="middle">BHA</text>
+    </g>
+
+    <!-- Item 3: Well Geometry & Annulus -->
+    <g transform="translate(10, 120)">
+      <rect width="334" height="54" rx="10" fill="url(#itemBg)" stroke="#1e293b" />
+      <circle cx="308" cy="27" r="14" fill="#065f46" opacity="0.4" />
+      <!-- Compass Icon -->
+      <circle cx="308" cy="27" r="7" fill="none" stroke="#34d399" stroke-width="2" />
+      <text x="286" y="24" fill="#f8fafc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="end">هندسه چاه و فضای دالیز</text>
+      <text x="286" y="40" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="end">ظرفیت لوله، حجم فضای حلقوی و زمان رفت‌وبرگشت</text>
+      <rect x="12" y="18" width="38" height="18" rx="4" fill="#312e81" />
+      <text x="31" y="30" fill="#a5b4fc" font-size="8" font-weight="bold" text-anchor="middle">هندسه</text>
+    </g>
+
+    <!-- Item 4: Hydraulics & Friction -->
+    <g transform="translate(10, 180)">
+      <rect width="334" height="54" rx="10" fill="url(#itemBg)" stroke="#1e293b" />
+      <circle cx="308" cy="27" r="14" fill="#0e7490" opacity="0.4" />
+      <!-- Pulse Icon -->
+      <path d="M 299,27 L 304,27 L 307,21 L 311,32 L 314,27 L 318,27" fill="none" stroke="#22d3ee" stroke-width="2" />
+      <text x="286" y="24" fill="#f8fafc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="end">هیدرولیک و اصطکاک لوله‌مغزی</text>
+      <text x="286" y="40" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="end">افت فشار اصطکاکی، رژیم جریان و سرعت بحرانی</text>
+      <rect x="12" y="18" width="38" height="18" rx="4" fill="#1e1b4b" />
+      <text x="31" y="30" fill="#38bdf8" font-size="8" font-weight="bold" text-anchor="middle">فشار</text>
+    </g>
+
+    <!-- Item 5: Cementing & Balanced Plug -->
+    <g transform="translate(10, 240)">
+      <rect width="334" height="54" rx="10" fill="url(#itemBg)" stroke="#1e293b" />
+      <circle cx="308" cy="27" r="14" fill="#9a3412" opacity="0.4" />
+      <text x="286" y="24" fill="#f8fafc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="end">محاسبات سیمان‌کاری و پلاگ تعادل</text>
+      <text x="286" y="40" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="end">حجم دوغاب، اسپیسرها و ارتفاع پلاگ تعادلی</text>
+      <rect x="12" y="18" width="38" height="18" rx="4" fill="#431407" />
+      <text x="31" y="30" fill="#fb923c" font-size="8" font-weight="bold" text-anchor="middle">سیمان</text>
+    </g>
+
+    <!-- Item 6: Acidizing & Cleanout -->
+    <g transform="translate(10, 300)">
+      <rect width="334" height="54" rx="10" fill="url(#itemBg)" stroke="#1e293b" />
+      <circle cx="308" cy="27" r="14" fill="#831843" opacity="0.4" />
+      <text x="286" y="24" fill="#f8fafc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="end">عملیات اسیدکاری و شستشوی چاه</text>
+      <text x="286" y="40" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="end">اسیدکاری ماتریکس، حجم پوشش و تست خوردگی</text>
+      <rect x="12" y="18" width="38" height="18" rx="4" fill="#701a75" />
+      <text x="31" y="30" fill="#f472b6" font-size="8" font-weight="bold" text-anchor="middle">اسیدکاری</text>
+    </g>
+
+    <!-- Item 7: Nitrogen Lifting (N2) -->
+    <g transform="translate(10, 360)">
+      <rect width="334" height="54" rx="10" fill="url(#itemBg)" stroke="#1e293b" />
+      <circle cx="308" cy="27" r="14" fill="#14532d" opacity="0.4" />
+      <text x="286" y="24" fill="#f8fafc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="end">احیاء چاه با گاز نیتروژن (N2)</text>
+      <text x="286" y="40" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="end">تزریق N2، نسبت فاز گازی به مایع و فشار سرچاهی</text>
+      <rect x="12" y="18" width="38" height="18" rx="4" fill="#14532d" />
+      <text x="31" y="30" fill="#4ade80" font-size="8" font-weight="bold" text-anchor="middle">نیتروژن</text>
+    </g>
+
+    <!-- Item 8: CT Academy -->
+    <g transform="translate(10, 420)">
+      <rect width="334" height="54" rx="10" fill="url(#itemBg)" stroke="#1e293b" />
+      <circle cx="308" cy="27" r="14" fill="#701a75" opacity="0.4" />
+      <text x="286" y="24" fill="#f8fafc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="end">آکادمی آموزش لوله‌مغزی</text>
+      <text x="286" y="40" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="end">۱۲ فصل مدون استانداردهای عملیاتی و ایمنی</text>
+      <rect x="12" y="18" width="38" height="18" rx="4" fill="#4c0519" />
+      <text x="31" y="30" fill="#fb7185" font-size="8" font-weight="bold" text-anchor="middle">آموزش</text>
+    </g>
+
+    <!-- Item 9: Tubing Matrix Specs -->
+    <g transform="translate(10, 480)">
+      <rect width="334" height="54" rx="10" fill="url(#itemBg)" stroke="#1e293b" />
+      <circle cx="308" cy="27" r="14" fill="#1e3a8a" opacity="0.4" />
+      <text x="286" y="24" fill="#f8fafc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="end">ماتریس مشخصات لوله‌مغزی</text>
+      <text x="286" y="40" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="end">مشخصات لوله‌های استاندارد، قطر، ضخامت و تسلیم</text>
+      <rect x="12" y="18" width="38" height="18" rx="4" fill="#1e1b4b" />
+      <text x="31" y="30" fill="#60a5fa" font-size="8" font-weight="bold" text-anchor="middle">مشخصات</text>
+    </g>
+
+    <!-- Item 10: Reel Fatigue Management -->
+    <g transform="translate(10, 540)">
+      <rect width="334" height="54" rx="10" fill="url(#itemBg)" stroke="#1e293b" />
+      <circle cx="308" cy="27" r="14" fill="#854d0e" opacity="0.4" />
+      <text x="286" y="24" fill="#f8fafc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="end">مدیریت گزارشات و قرقره‌ها</text>
+      <text x="286" y="40" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="end">رهگیری چرخه خستگی لوله‌مغزی و متراژ عملکرد</text>
+      <rect x="12" y="18" width="38" height="18" rx="4" fill="#451a03" />
+      <text x="31" y="30" fill="#fbbf24" font-size="8" font-weight="bold" text-anchor="middle">گزارشات</text>
+    </g>
+  </g>
+</svg>

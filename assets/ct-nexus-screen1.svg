@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 780" width="100%" height="100%">
+  <defs>
+    <linearGradient id="screenBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#07090e" />
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131b2e" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="60%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Phone Frame & Background -->
+  <rect width="380" height="780" rx="36" fill="url(#screenBg)" stroke="#1e293b" stroke-width="3" />
+  
+  <!-- Status Bar -->
+  <text x="28" y="28" fill="#94a3b8" font-size="11" font-family="sans-serif" font-weight="600">19:45</text>
+  <circle cx="340" cy="24" r="3" fill="#10b981" />
+  <rect x="350" y="20" width="14" height="8" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.5" />
+  <rect x="352" y="22" width="9" height="4" fill="#94a3b8" />
+
+  <!-- Top Card: Well Profile Info -->
+  <g transform="translate(16, 42)">
+    <rect width="348" height="68" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" />
+    <text x="330" y="24" fill="#f8fafc" font-size="12" font-family="sans-serif" font-weight="700" text-anchor="end">Deep Vertical High-Pressure Well</text>
+    <text x="330" y="42" fill="#64748b" font-size="10" font-family="sans-serif" text-anchor="end">چاه عمودی پرفشار با انحراف ۳۴ درجه در ناحیه هدف</text>
+    <text x="20" y="56" fill="#38bdf8" font-size="10" font-family="sans-serif" font-weight="600">MD: 14,500 FT</text>
+    <text x="330" y="56" fill="#f59e0b" font-size="10" font-family="sans-serif" font-weight="600" text-anchor="end">MAX INC: 54°</text>
+  </g>
+
+  <!-- Slider & Depth Controller -->
+  <g transform="translate(16, 122)">
+    <rect width="348" height="92" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" />
+    <text x="330" y="26" fill="#f1f5f9" font-size="11" font-family="sans-serif" font-weight="700" text-anchor="end">موقعیت و عمق جاری نازل لوله‌مغزی (CT Depth)</text>
+    <text x="330" y="46" fill="#38bdf8" font-size="10" font-family="sans-serif" text-anchor="end">TVD: 8,437 FT | INC: 34.3°</text>
+    <text x="20" y="46" fill="#f59e0b" font-size="13" font-family="sans-serif" font-weight="800">MD: 8,500 FT</text>
+    
+    <!-- Depth Slider -->
+    <rect x="20" y="62" width="308" height="6" rx="3" fill="#334155" />
+    <rect x="20" y="62" width="180" height="6" rx="3" fill="#f59e0b" />
+    <circle cx="200" cy="65" r="8" fill="#fbbf24" stroke="#ffffff" stroke-width="2" filter="url(#neonGlow)" />
+    <text x="20" y="82" fill="#64748b" font-size="9" font-family="sans-serif">0 FT</text>
+    <text x="190" y="82" fill="#f59e0b" font-size="9" font-family="sans-serif" font-weight="bold">8,500 FT</text>
+    <text x="300" y="82" fill="#64748b" font-size="9" font-family="sans-serif">14,500 FT</text>
+  </g>
+
+  <!-- Well Trajectory 2D Graph (TVD vs Vertical Section) -->
+  <g transform="translate(16, 226)">
+    <rect width="348" height="340" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1" />
+    
+    <!-- Title & Legend -->
+    <text x="330" y="26" fill="#e2e8f0" font-size="11" font-family="sans-serif" font-weight="700" text-anchor="end">نمودار پروفایل چاه (TVD vs Vertical Sect)</text>
+    <circle cx="30" cy="22" r="4" fill="#38bdf8" />
+    <text x="40" y="26" fill="#94a3b8" font-size="9" font-family="sans-serif">مسیر چاه</text>
+    <circle cx="100" cy="22" r="4" fill="#f43f5e" />
+    <text x="110" y="26" fill="#94a3b8" font-size="9" font-family="sans-serif">موقعیت نازل</text>
+
+    <!-- Graph Axes & Grid -->
+    <g transform="translate(45, 45)">
+      <!-- Grid lines -->
+      <line x1="0" y1="0" x2="280" y2="0" stroke="#1e293b" stroke-dasharray="2 2" />
+      <line x1="0" y1="60" x2="280" y2="60" stroke="#1e293b" stroke-dasharray="2 2" />
+      <line x1="0" y1="120" x2="280" y2="120" stroke="#1e293b" stroke-dasharray="2 2" />
+      <line x1="0" y1="180" x2="280" y2="180" stroke="#1e293b" stroke-dasharray="2 2" />
+      <line x1="0" y1="240" x2="280" y2="240" stroke="#1e293b" />
+
+      <!-- Y Axis Labels -->
+      <text x="-8" y="5" fill="#64748b" font-size="8" text-anchor="end">0 FT</text>
+      <text x="-8" y="65" fill="#64748b" font-size="8" text-anchor="end">3,000</text>
+      <text x="-8" y="125" fill="#64748b" font-size="8" text-anchor="end">6,000</text>
+      <text x="-8" y="185" fill="#64748b" font-size="8" text-anchor="end">9,000</text>
+      <text x="-8" y="245" fill="#64748b" font-size="8" text-anchor="end">12,000</text>
+
+      <!-- Trajectory Path -->
+      <!-- Vertical section 0 to 4500 ft, then build up curve, then tangent -->
+      <path d="M 10,0 L 10,130 Q 15,185 80,210 L 250,230" fill="none" stroke="url(#lineGrad)" stroke-width="4" filter="url(#neonGlow)" />
+      
+      <!-- KOP Marker -->
+      <circle cx="10" cy="130" r="4" fill="#fbbf24" stroke="#0f172a" stroke-width="1.5" />
+      <text x="22" y="130" fill="#fbbf24" font-size="8" font-weight="bold">KOP (6,500 FT)</text>
+      
+      <!-- CT Nozzle Current Location Marker -->
+      <g transform="translate(80, 210)">
+        <circle cx="0" cy="0" r="7" fill="#f43f5e" filter="url(#neonGlow)" />
+        <circle cx="0" cy="0" r="3" fill="#ffffff" />
+        <rect x="8" y="-14" width="130" height="20" rx="4" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+        <text x="14" y="0" fill="#38bdf8" font-size="8" font-weight="bold">CT Nozzle: 8,500 FT (34.3°)</text>
+      </g>
+    </g>
+
+    <text x="174" y="325" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="middle">جابجایی افقی / انحراف چاه (Vertical Section FT)</text>
+  </g>
+
+  <!-- Bottom Metric 4-Card Grid -->
+  <g transform="translate(16, 578)">
+    <!-- Card 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="168" height="82" rx="12" fill="url(#cardBg)" stroke="#1e293b" />
+      <text x="156" y="24" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">عمق قائم واقعی (TVD)</text>
+      <text x="156" y="54" fill="#38bdf8" font-size="18" font-family="sans-serif" font-weight="800" text-anchor="end">8,437 <tspan font-size="11" fill="#64748b">FT</tspan></text>
+      <text x="156" y="70" fill="#10b981" font-size="9" text-anchor="end">فشار استاتیک: 4,380 PSI</text>
+    </g>
+    <!-- Card 2 -->
+    <g transform="translate(180, 0)">
+      <rect width="168" height="82" rx="12" fill="url(#cardBg)" stroke="#1e293b" />
+      <text x="156" y="24" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">عمق اندازه‌گیری‌شده (MD)</text>
+      <text x="156" y="54" fill="#f59e0b" font-size="18" font-family="sans-serif" font-weight="800" text-anchor="end">8,500 <tspan font-size="11" fill="#64748b">FT</tspan></text>
+      <text x="156" y="70" fill="#38bdf8" font-size="9" text-anchor="end">طول لوله درون چاه</text>
+    </g>
+    <!-- Card 3 -->
+    <g transform="translate(0, 92)">
+      <rect width="168" height="76" rx="12" fill="url(#cardBg)" stroke="#1e293b" />
+      <text x="156" y="24" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">جابجایی افقی (Displ.)</text>
+      <text x="156" y="54" fill="#f1f5f9" font-size="18" font-family="sans-serif" font-weight="800" text-anchor="end">323 <tspan font-size="11" fill="#64748b">FT</tspan></text>
+    </g>
+    <!-- Card 4 -->
+    <g transform="translate(180, 92)">
+      <rect width="168" height="76" rx="12" fill="url(#cardBg)" stroke="#1e293b" />
+      <text x="156" y="24" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">زاویه انحراف در سر مته</text>
+      <text x="156" y="54" fill="#10b981" font-size="18" font-family="sans-serif" font-weight="800" text-anchor="end">34.3° <tspan font-size="11" fill="#64748b">Inc</tspan></text>
+    </g>
+  </g>
+</svg>

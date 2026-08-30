@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 760" width="100%" height="100%">
+  <defs>
+    <linearGradient id="navBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a" />
+      <stop offset="50%" stop-color="#070a14" />
+      <stop offset="100%" stop-color="#03050a" />
+    </linearGradient>
+
+    <!-- Glowing Menu Drawer Gradient -->
+    <linearGradient id="menuDrawerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141c2e" />
+      <stop offset="50%" stop-color="#101726" />
+      <stop offset="100%" stop-color="#0b111c" />
+    </linearGradient>
+
+    <!-- Active Yellow Item Gradient -->
+    <linearGradient id="activeYellowItem" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3d2a0a" />
+      <stop offset="100%" stop-color="#2a1e08" />
+    </linearGradient>
+
+    <filter id="softDrawerShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="360" height="760" rx="36" fill="url(#navBgGrad)" stroke="#1e293b" stroke-width="3" />
+
+  <!-- Top System Status Bar -->
+  <g fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">
+    <text x="24" y="28" font-weight="bold">19:33</text>
+    <g transform="translate(280, 16)">
+      <circle cx="6" cy="7" r="3" fill="#94a3b8" />
+      <path d="M 14,3 L 20,11 M 24,5 L 30,11" stroke="#94a3b8" stroke-width="1.5" />
+      <rect x="36" y="2" width="16" height="9" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.2" />
+      <rect x="38" y="4" width="9" height="5" rx="1" fill="#94a3b8" />
+    </g>
+  </g>
+
+  <!-- Top App Navigation Header Bar -->
+  <g transform="translate(14, 40)">
+    <!-- Bell Notification Button -->
+    <rect width="34" height="34" rx="10" fill="#1e1810" stroke="#452a0a" stroke-width="1" />
+    <path d="M 13,11 C 13,9 21,9 21,11 C 21,15 24,18 24,20 L 10,20 C 10,18 13,15 13,11 Z M 15,22 C 15,23.5 19,23.5 19,22" fill="none" stroke="#f59e0b" stroke-width="1.5" />
+
+    <!-- Orange Close / Menu Button (X) -->
+    <rect x="42" y="0" width="40" height="34" rx="10" fill="#f59e0b" />
+    <path d="M 56,12 L 68,22 M 68,12 L 56,22" stroke="#000000" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Sun / Theme Toggle Button -->
+    <rect x="88" y="0" width="36" height="34" rx="10" fill="#131c2e" stroke="#1f2d48" stroke-width="1" />
+    <circle cx="106" cy="17" r="5" fill="none" stroke="#fde047" stroke-width="1.5" />
+    <line x1="106" y1="8" x2="106" y2="10" stroke="#fde047" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="106" y1="24" x2="106" y2="26" stroke="#fde047" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="97" y1="17" x2="99" y2="17" stroke="#fde047" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="113" y1="17" x2="115" y2="17" stroke="#fde047" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Search Input Box -->
+    <g transform="translate(130, 0)">
+      <rect width="144" height="34" rx="10" fill="#101726" stroke="#1c2842" stroke-width="1" />
+      <text x="12" y="21" fill="#475569" font-family="system-ui, sans-serif" font-size="10.5">🔍 جستجوی سریع...</text>
+    </g>
+
+    <!-- User Profile Badge (LK) -->
+    <g transform="translate(282, 0)">
+      <rect width="38" height="34" rx="10" fill="#f59e0b" />
+      <text x="19" y="22" fill="#000000" font-family="system-ui, sans-serif" font-weight="900" font-size="12" text-anchor="middle">LK</text>
+    </g>
+  </g>
+
+  <!-- Open Drawer: v2.0 Operational Modules Menu -->
+  <g transform="translate(14, 86)" filter="url(#softDrawerShadow)">
+    <rect width="332" height="640" rx="20" fill="url(#menuDrawerGrad)" stroke="#1f2d47" stroke-width="1.2" />
+    
+    <!-- Drawer Header -->
+    <g transform="translate(16, 16)">
+      <rect x="236" y="0" width="68" height="22" rx="6" fill="#f59e0b" />
+      <text x="270" y="15" fill="#000000" font-family="system-ui, sans-serif" font-weight="bold" font-size="9.5" text-anchor="middle">v2.0 ماژول‌ها</text>
+      
+      <text x="226" y="16" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" text-anchor="end">ماژول‌های عملیاتی</text>
+      <text x="0" y="15" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">کلید ۲</text>
+    </g>
+
+    <!-- Menu Items List -->
+    <g transform="translate(14, 52)">
+      
+      <!-- Item 01: Active Dashboard (ROOT) -->
+      <g transform="translate(0, 0)">
+        <rect width="304" height="58" rx="14" fill="url(#activeYellowItem)" stroke="#ca8a04" stroke-width="1.2" />
+        <!-- Orange Icon -->
+        <rect x="250" y="9" width="40" height="40" rx="10" fill="#f59e0b" />
+        <text x="270" y="34" fill="#000000" font-size="16" text-anchor="middle">🏠</text>
+
+        <rect x="194" y="12" width="46" height="18" rx="4" fill="#78350f" />
+        <text x="217" y="24" fill="#fde047" font-family="system-ui, sans-serif" font-size="8" font-weight="bold" text-anchor="middle">ROOT</text>
+
+        <text x="186" y="26" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" text-anchor="end">01 داشبورد اصلی</text>
+        <text x="238" y="44" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="9" text-anchor="end">نمای کلی ناوگان، تاسیسات، وام‌ها و یادآورها</text>
+      </g>
+
+      <!-- Item 02: Auto Fleet -->
+      <g transform="translate(0, 66)">
+        <rect width="304" height="54" rx="14" fill="#0f1726" stroke="#1a263d" stroke-width="1" />
+        <rect x="252" y="8" width="38" height="38" rx="10" fill="#1e293b" />
+        <text x="271" y="32" fill="#94a3b8" font-size="15" text-anchor="middle">🚗</text>
+
+        <rect x="200" y="10" width="42" height="16" rx="4" fill="#1e293b" />
+        <text x="221" y="21" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8" text-anchor="middle">AUTO</text>
+
+        <text x="192" y="23" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11.5" text-anchor="end">02 ناوگان خودروها</text>
+        <text x="240" y="39" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="end">پایش سرویس‌های مصرفی، روغن، بیمه و معاینه فنی</text>
+      </g>
+
+      <!-- Item 03: Home Assets -->
+      <g transform="translate(0, 126)">
+        <rect width="304" height="54" rx="14" fill="#0f1726" stroke="#1a263d" stroke-width="1" />
+        <rect x="252" y="8" width="38" height="38" rx="10" fill="#1e293b" />
+        <text x="271" y="32" fill="#94a3b8" font-size="15" text-anchor="middle">🏠</text>
+
+        <rect x="200" y="10" width="42" height="16" rx="4" fill="#1e293b" />
+        <text x="221" y="21" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8" text-anchor="middle">APPL</text>
+
+        <text x="192" y="23" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11.5" text-anchor="end">03 تاسیسات و لوازم</text>
+        <text x="240" y="39" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="end">سرویس پکیج، کولر، تصفیه آب و کارت‌های گارانتی</text>
+      </g>
+
+      <!-- Item 04: Purchases & Loans -->
+      <g transform="translate(0, 186)">
+        <rect width="304" height="54" rx="14" fill="#0f1726" stroke="#1a263d" stroke-width="1" />
+        <rect x="252" y="8" width="38" height="38" rx="10" fill="#1e293b" />
+        <text x="271" y="32" fill="#94a3b8" font-size="15" text-anchor="middle">💳</text>
+
+        <rect x="200" y="10" width="42" height="16" rx="4" fill="#1e293b" />
+        <text x="221" y="21" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8" text-anchor="middle">LOAN</text>
+
+        <text x="192" y="23" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11.5" text-anchor="end">04 خریدها و تسهیلات</text>
+        <text x="240" y="39" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="end">ردیابی وام‌ها، جدول اقساط و هشدارهای سررسید</text>
+      </g>
+
+      <!-- Section Label: Reports -->
+      <g transform="translate(0, 246)">
+        <text x="300" y="12" fill="#64748b" font-family="system-ui, sans-serif" font-size="9" text-anchor="end">گزارش‌های سیستم</text>
+        <line x1="0" y1="8" x2="200" y2="8" stroke="#1e293b" stroke-width="1" />
+      </g>
+
+      <!-- Item 05: Service Calendar -->
+      <g transform="translate(0, 264)">
+        <rect width="304" height="54" rx="14" fill="#0f1726" stroke="#1a263d" stroke-width="1" />
+        <rect x="252" y="8" width="38" height="38" rx="10" fill="#1e293b" />
+        <text x="271" y="32" fill="#94a3b8" font-size="15" text-anchor="middle">📅</text>
+
+        <rect x="200" y="10" width="42" height="16" rx="4" fill="#1e293b" />
+        <text x="221" y="21" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8" text-anchor="middle">CAL</text>
+
+        <text x="192" y="23" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11.5" text-anchor="end">05 تقویم سرویس‌ها</text>
+        <text x="240" y="39" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="end">جدول زمان‌بندی ماهانه سرویس‌ها و تسویه‌ها</text>
+      </g>
+
+      <!-- Item 06: Service Directory -->
+      <g transform="translate(0, 324)">
+        <rect width="304" height="54" rx="14" fill="#0f1726" stroke="#1a263d" stroke-width="1" />
+        <rect x="252" y="8" width="38" height="38" rx="10" fill="#1e293b" />
+        <text x="271" y="32" fill="#94a3b8" font-size="15" text-anchor="middle">👥</text>
+
+        <rect x="200" y="10" width="42" height="16" rx="4" fill="#1e293b" />
+        <text x="221" y="21" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8" text-anchor="middle">EXP</text>
+
+        <text x="192" y="23" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11.5" text-anchor="end">06 دفترچه متخصصین</text>
+        <text x="240" y="39" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="end">مدیریت تماس تعمیرکاران، تعمیرگاه‌ها و خدمات</text>
+      </g>
+
+      <!-- Item 07: Financial & Depreciation Analysis -->
+      <g transform="translate(0, 384)">
+        <rect width="304" height="54" rx="14" fill="#0f1726" stroke="#1a263d" stroke-width="1" />
+        <rect x="252" y="8" width="38" height="38" rx="10" fill="#1e293b" />
+        <text x="271" y="32" fill="#94a3b8" font-size="15" text-anchor="middle">📊</text>
+
+        <rect x="200" y="10" width="42" height="16" rx="4" fill="#1e293b" />
+        <text x="221" y="21" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8" text-anchor="middle">FIN</text>
+
+        <text x="192" y="23" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11.5" text-anchor="end">07 آنالیز مالی و استهلاک</text>
+        <text x="240" y="39" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="end">گزارشات و نمودارهای میانگین هزینه نگهداری</text>
+      </g>
+
+      <!-- Item 08: System Settings -->
+      <g transform="translate(0, 444)">
+        <rect width="304" height="54" rx="14" fill="#0f1726" stroke="#1a263d" stroke-width="1" />
+        <rect x="252" y="8" width="38" height="38" rx="10" fill="#1e293b" />
+        <text x="271" y="32" fill="#94a3b8" font-size="15" text-anchor="middle">⚙️</text>
+
+        <rect x="200" y="10" width="42" height="16" rx="4" fill="#1e293b" />
+        <text x="221" y="21" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8" text-anchor="middle">SET</text>
+
+        <text x="192" y="23" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11.5" text-anchor="end">08 تنظیمات سیستم</text>
+        <text x="240" y="39" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8.5" text-anchor="end">پشتیبان‌گیری داده‌ها، اعلان‌ها و تم تاریک</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Home Indicator -->
+  <rect x="130" y="744" width="100" height="4" rx="2" fill="#475569" />
+</svg>

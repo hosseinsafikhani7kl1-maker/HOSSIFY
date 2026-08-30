@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 780" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Card Backgrounds -->
+    <linearGradient id="toolCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#111c2e" />
+    </linearGradient>
+
+    <!-- Active Tool Card Gradient (Blue Glow for Kill Sheet) -->
+    <linearGradient id="activeToolCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#0c4a6e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="380" height="780" rx="36" fill="url(#bgGrad3)" stroke="#334155" stroke-width="4" />
+
+  <!-- Status Bar -->
+  <text x="30" y="24" fill="#cbd5e1" font-size="11" font-family="sans-serif" font-weight="bold">11:11</text>
+  <text x="350" y="24" text-anchor="end" fill="#cbd5e1" font-size="11" font-family="sans-serif">4G  100% 🔋</text>
+
+  <!-- Top Navigation Header -->
+  <g transform="translate(18, 40)">
+    <!-- Search Button -->
+    <rect x="0" y="0" width="38" height="38" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle cx="17" cy="17" r="6" fill="none" stroke="#94a3b8" stroke-width="2" />
+    <line x1="22" y1="22" x2="27" y2="27" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+
+    <!-- App Brand Pill with Hamburger Menu -->
+    <g transform="translate(244, 0)">
+      <rect width="100" height="38" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="54" y="24" text-anchor="end" fill="#f8fafc" font-size="12" font-family="sans-serif" font-weight="bold">نفت آموز</text>
+      <rect x="62" y="6" width="28" height="26" rx="8" fill="#f59e0b" />
+      <line x1="68" y1="14" x2="84" y2="14" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="68" y1="19" x2="84" y2="19" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="68" y1="24" x2="84" y2="24" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- Top Badge -->
+  <g transform="translate(18, 96)">
+    <rect x="20" y="0" width="304" height="26" rx="13" fill="#451a03" stroke="#f59e0b" stroke-width="0.8" opacity="0.9" />
+    <text x="172" y="17" text-anchor="middle" fill="#fbbf24" font-size="10" font-family="sans-serif" font-weight="bold">🧮 جعبه‌ابزار تخصصی و آنلاین مهندسین فیلد، دکل و دفتری</text>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="344" y="152" text-anchor="end" fill="#f8fafc" font-size="15" font-family="sans-serif" font-weight="900">سامانه محاسبات و تحلیل فرمول‌های</text>
+  <text x="344" y="174" text-anchor="end" fill="#f8fafc" font-size="15" font-family="sans-serif" font-weight="900">مهندسی نفت (Field Toolbox)</text>
+  <text x="344" y="196" text-anchor="end" fill="#94a3b8" font-size="8.5" font-family="sans-serif">شامل ۱۴ ابزار تخصصی بالادستی و پایین‌دستی بر اساس استانداردهای جهانی API، SPE و IWCF</text>
+
+  <!-- Pill Button -->
+  <g transform="translate(18, 212)">
+    <rect width="344" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="172" y="21" text-anchor="middle" fill="#38bdf8" font-size="10.5" font-weight="bold">💡 آماده استفاده میدانی در دکل و سایت</text>
+  </g>
+
+  <!-- Filter Category Tabs -->
+  <g transform="translate(18, 260)">
+    <!-- Tab 1: All Tools (Active) -->
+    <g transform="translate(244, 0)">
+      <rect width="100" height="34" rx="12" fill="#0284c7" stroke="#38bdf8" stroke-width="1" />
+      <text x="50" y="21" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">همه ابزارها (۱۴)</text>
+    </g>
+
+    <!-- Tab 2: Reservoir & PVT -->
+    <g transform="translate(122, 0)">
+      <rect width="116" height="34" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="58" y="21" text-anchor="middle" fill="#94a3b8" font-size="9.5">مهندسی مخزن و PVT</text>
+    </g>
+
+    <!-- Tab 3: Piping & Hydraulics -->
+    <g transform="translate(0, 0)">
+      <rect width="116" height="34" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="58" y="21" text-anchor="middle" fill="#94a3b8" font-size="9.5">پایپینگ و هیدرولیک لوله</text>
+    </g>
+  </g>
+
+  <!-- 2-Column Tools Grid -->
+  <g transform="translate(18, 308)">
+    
+    <!-- ROW 1 -->
+    <!-- Card: PVT Properties (Right) -->
+    <g transform="translate(176, 0)">
+      <rect width="168" height="66" rx="16" fill="url(#toolCardGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="84" cy="22" r="10" fill="#0f172a" />
+      <text x="84" y="26" text-anchor="middle" fill="#94a3b8" font-size="12">🧪</text>
+      <text x="84" y="48" text-anchor="middle" fill="#e2e8f0" font-size="10.5" font-weight="bold">خواص PVT سیالات مخزن</text>
+    </g>
+    <!-- Card: Piping Sizing & Hydraulics (Left) -->
+    <g transform="translate(0, 0)">
+      <rect width="168" height="66" rx="16" fill="url(#toolCardGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="84" cy="22" r="10" fill="#0f172a" />
+      <text x="84" y="26" text-anchor="middle" fill="#94a3b8" font-size="12">⚡</text>
+      <text x="84" y="48" text-anchor="middle" fill="#e2e8f0" font-size="10.5" font-weight="bold">سایزینگ و هیدرولیک لوله</text>
+    </g>
+
+    <!-- ROW 2 -->
+    <!-- Card: Material Balance Model (Right) -->
+    <g transform="translate(176, 74)">
+      <rect width="168" height="66" rx="16" fill="url(#toolCardGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="84" cy="22" r="10" fill="#0f172a" />
+      <text x="84" y="26" text-anchor="middle" fill="#94a3b8" font-size="12">⇄</text>
+      <text x="84" y="48" text-anchor="middle" fill="#e2e8f0" font-size="10.5" font-weight="bold">مدل ماترو داده‌های نفت</text>
+    </g>
+    <!-- Card: Kill Sheet & Well Control (Active / Glow Blue) (Left) -->
+    <g transform="translate(0, 74)">
+      <rect width="168" height="66" rx="16" fill="url(#activeToolCardGrad)" stroke="#38bdf8" stroke-width="1.5" />
+      <circle cx="84" cy="22" r="10" fill="#0c4a6e" />
+      <text x="84" y="26" text-anchor="middle" fill="#facc15" font-size="12">⏱️</text>
+      <text x="84" y="48" text-anchor="middle" fill="#ffffff" font-size="10.5" font-weight="bold">کیل‌شیت و کنترل چاه</text>
+    </g>
+
+    <!-- ROW 3 -->
+    <!-- Card: Oil Material Balance (Right) -->
+    <g transform="translate(176, 148)">
+      <rect width="168" height="66" rx="16" fill="url(#toolCardGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="84" cy="22" r="10" fill="#0f172a" />
+      <text x="84" y="26" text-anchor="middle" fill="#94a3b8" font-size="12">⚖️</text>
+      <text x="84" y="48" text-anchor="middle" fill="#e2e8f0" font-size="10.5" font-weight="bold">تعادل ماده نفت</text>
+    </g>
+    <!-- Card: Original Oil In Place (OOIP) (Left) -->
+    <g transform="translate(0, 148)">
+      <rect width="168" height="66" rx="16" fill="url(#toolCardGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="84" cy="22" r="10" fill="#0f172a" />
+      <text x="84" y="26" text-anchor="middle" fill="#94a3b8" font-size="12">🛢️</text>
+      <text x="84" y="48" text-anchor="middle" fill="#e2e8f0" font-size="10.5" font-weight="bold">حجم نفت درجا (OOIP)</text>
+    </g>
+
+    <!-- ROW 4 -->
+    <!-- Card: Productivity Index PI (Right) -->
+    <g transform="translate(176, 222)">
+      <rect width="168" height="66" rx="16" fill="url(#toolCardGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="84" cy="22" r="10" fill="#0f172a" />
+      <text x="84" y="26" text-anchor="middle" fill="#94a3b8" font-size="12">📊</text>
+      <text x="84" y="48" text-anchor="middle" fill="#e2e8f0" font-size="10.5" font-weight="bold">شاخص بهره‌دهی (PI)</text>
+    </g>
+    <!-- Card: Hydraulic Head Loss (Left) -->
+    <g transform="translate(0, 222)">
+      <rect width="168" height="66" rx="16" fill="url(#toolCardGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="84" cy="22" r="10" fill="#0f172a" />
+      <text x="84" y="26" text-anchor="middle" fill="#94a3b8" font-size="12">📉</text>
+      <text x="84" y="48" text-anchor="middle" fill="#e2e8f0" font-size="10.5" font-weight="bold">افت فشار هیدرولیک</text>
+    </g>
+
+    <!-- ROW 5 -->
+    <!-- Card: API Gravity & Density (Right) -->
+    <g transform="translate(176, 296)">
+      <rect width="168" height="66" rx="16" fill="url(#toolCardGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="84" cy="22" r="10" fill="#0f172a" />
+      <text x="84" y="26" text-anchor="middle" fill="#94a3b8" font-size="12">📈</text>
+      <text x="84" y="48" text-anchor="middle" fill="#e2e8f0" font-size="10.5" font-weight="bold">درجه API و دانسیته</text>
+    </g>
+    <!-- Card: Hydrostatic Pressure (Left) -->
+    <g transform="translate(0, 296)">
+      <rect width="168" height="66" rx="16" fill="url(#toolCardGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="84" cy="22" r="10" fill="#0f172a" />
+      <text x="84" y="26" text-anchor="middle" fill="#94a3b8" font-size="12">💧</text>
+      <text x="84" y="48" text-anchor="middle" fill="#e2e8f0" font-size="10.5" font-weight="bold">فشار هیدرواستاتیک</text>
+    </g>
+
+    <!-- ROW 6 -->
+    <!-- Card: Well Volume & Capacity (Right) -->
+    <g transform="translate(176, 370)">
+      <rect width="168" height="66" rx="16" fill="url(#toolCardGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="84" cy="22" r="10" fill="#0f172a" />
+      <text x="84" y="26" text-anchor="middle" fill="#94a3b8" font-size="12">🕳️</text>
+      <text x="84" y="48" text-anchor="middle" fill="#e2e8f0" font-size="10.5" font-weight="bold">حجم و ظرفیت چاه</text>
+    </g>
+    <!-- Card: Mud Pump & Circulation (Left) -->
+    <g transform="translate(0, 370)">
+      <rect width="168" height="66" rx="16" fill="url(#toolCardGrad)" stroke="#334155" stroke-width="1" />
+      <circle cx="84" cy="22" r="10" fill="#0f172a" />
+      <text x="84" y="26" text-anchor="middle" fill="#94a3b8" font-size="12">⚙️</text>
+      <text x="84" y="48" text-anchor="middle" fill="#e2e8f0" font-size="10.5" font-weight="bold">پمپ گل و چرخه سیستم</text>
+    </g>
+
+  </g>
+</svg>

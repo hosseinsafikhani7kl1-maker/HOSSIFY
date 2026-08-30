@@ -1,0 +1,306 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Radial Gradient -->
+    <radialGradient id="spaceBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#070c18" />
+      <stop offset="60%" stop-color="#030712" />
+      <stop offset="100%" stop-color="#000208" />
+    </radialGradient>
+
+    <!-- Rainbow Holographic Halo Ring Gradient -->
+    <linearGradient id="rainbowRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.35" />
+      <stop offset="25%" stop-color="#10b981" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.5" />
+      <stop offset="75%" stop-color="#6366f1" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.35" />
+    </linearGradient>
+
+    <!-- 3D Glass Plaque Background -->
+    <linearGradient id="glassPlate" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#0f172a" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Glass Rim Border -->
+    <linearGradient id="glassRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="35%" stop-color="#0284c7" />
+      <stop offset="70%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Glowing Hologram Cyan Gradient -->
+    <linearGradient id="holoCyan" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="40%" stop-color="#38bdf8" />
+      <stop offset="80%" stop-color="#a5f3fc" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Amber Glow Reflection Gradient at Base -->
+    <radialGradient id="amberFloorGlow" cx="65%" cy="85%" r="35%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#b45309" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Blue Floor Glow Gradient at Base Left -->
+    <radialGradient id="blueFloorGlow" cx="35%" cy="85%" r="35%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#0369a1" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glow Filters -->
+    <filter id="neonGlowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="intenseHoloGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="2" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Deep Dark Space Background -->
+  <rect width="512" height="512" rx="112" fill="url(#spaceBg)" />
+
+  <!-- Outer Rainbow Holographic Refraction Ring / Lens Flare -->
+  <ellipse cx="256" cy="256" rx="230" ry="230" fill="none" stroke="url(#rainbowRing)" stroke-width="6" opacity="0.6" />
+  <ellipse cx="256" cy="256" rx="232" ry="232" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.4" stroke-dasharray="4 8" />
+
+  <!-- Ground Amber & Blue Glow Highlights -->
+  <ellipse cx="320" cy="430" rx="160" ry="50" fill="url(#amberFloorGlow)" />
+  <ellipse cx="180" cy="430" rx="160" ry="50" fill="url(#blueFloorGlow)" />
+
+  <!-- 3D Back Glass Plate (Square with Rounded Corners tilted) -->
+  <g transform="translate(68, 55)">
+    <!-- Glass Plate Shadow -->
+    <rect x="10" y="10" width="376" height="376" rx="44" fill="#000" opacity="0.7" />
+    <!-- Glass Plate Body -->
+    <rect width="376" height="376" rx="44" fill="url(#glassPlate)" stroke="url(#glassRim)" stroke-width="3.5" />
+    
+    <!-- Top-Left Branding Badge inside the glass plate -->
+    <g transform="translate(28, 28)">
+      <!-- Droplet Logo Icon (Gold/Cyan) -->
+      <path d="M12,4 C15,10 22,17 22,23 C22,29 17,34 12,34 C7,34 2,29 2,23 C2,17 9,10 12,4 Z" fill="#0284c7" stroke="#38bdf8" stroke-width="1.5" />
+      <path d="M12,12 C14,16 18,20 18,24 C18,28 15,31 12,31 C9,31 6,28 6,24 C6,20 10,16 12,12 Z" fill="#f59e0b" />
+
+      <!-- Text Label -->
+      <text x="32" y="14" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="900" font-size="11" letter-spacing="1.5">NAFT AMUZ</text>
+      <text x="32" y="24" fill="#38bdf8" font-family="system-ui, sans-serif" font-weight="700" font-size="7.5" letter-spacing="1">OIL &amp; GAS</text>
+      <text x="32" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-weight="600" font-size="6.5" letter-spacing="0.8">ENGINEERING</text>
+      <text x="32" y="40" fill="#94a3b8" font-family="system-ui, sans-serif" font-weight="600" font-size="6.5" letter-spacing="0.8">ACADEMY</text>
+    </g>
+
+    <!-- Circuit / Data HUD elements on glass plate -->
+    <g opacity="0.35">
+      <path d="M28,80 L80,80 L95,95 L140,95" fill="none" stroke="#38bdf8" stroke-width="1" />
+      <circle cx="140" cy="95" r="2" fill="#38bdf8" />
+      <rect x="28" y="110" width="40" height="24" rx="4" fill="none" stroke="#38bdf8" stroke-width="0.8" />
+      <line x1="33" y1="118" x2="58" y2="118" stroke="#38bdf8" stroke-width="1" />
+      <line x1="33" y1="124" x2="50" y2="124" stroke="#38bdf8" stroke-width="1" />
+
+      <!-- Mini HUD screen on top-right of glass -->
+      <rect x="270" y="55" width="45" height="32" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+      <line x1="276" y1="64" x2="306" y2="64" stroke="#38bdf8" stroke-width="1" />
+      <line x1="276" y1="70" x2="298" y2="70" stroke="#f59e0b" stroke-width="1" />
+      <line x1="276" y1="76" x2="302" y2="76" stroke="#38bdf8" stroke-width="1" />
+    </g>
+  </g>
+
+  <!-- 3D Glass Platform Base Pedestal (Isometric Floating) -->
+  <g transform="translate(110, 395)">
+    <!-- Base Plate 1 (Reflective Glass Platform) -->
+    <polygon points="146,0 292,38 146,76 0,38" fill="#0f172a" fill-opacity="0.85" stroke="#38bdf8" stroke-width="2" />
+    <polygon points="0,38 146,76 146,86 0,48" fill="#0284c7" fill-opacity="0.6" />
+    <polygon points="146,76 292,38 292,48 146,86" fill="#0369a1" fill-opacity="0.7" />
+  </g>
+
+  <!-- 3D Holographic Oil Rig Drilling Platform Structures -->
+  <g filter="url(#intenseHoloGlow)">
+    
+    <!-- 4 Main Platform Leg Columns with Cylindrical Nodes -->
+    <!-- Front Left Column -->
+    <g transform="translate(160, 260)">
+      <line x1="15" y1="0" x2="15" y2="150" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" />
+      <line x1="15" y1="0" x2="15" y2="150" stroke="#ffffff" stroke-width="2.5" />
+      <!-- Circular Ring Joints -->
+      <ellipse cx="15" cy="40" rx="12" ry="5" fill="none" stroke="#7dd3fc" stroke-width="2" />
+      <ellipse cx="15" cy="90" rx="12" ry="5" fill="none" stroke="#7dd3fc" stroke-width="2" />
+      <ellipse cx="15" cy="140" rx="14" ry="6" fill="#0284c7" stroke="#a5f3fc" stroke-width="2.5" />
+    </g>
+
+    <!-- Front Center-Right Column -->
+    <g transform="translate(250, 265)">
+      <line x1="15" y1="0" x2="15" y2="155" stroke="#38bdf8" stroke-width="9" stroke-linecap="round" />
+      <line x1="15" y1="0" x2="15" y2="155" stroke="#ffffff" stroke-width="3" />
+      <ellipse cx="15" cy="45" rx="13" ry="5.5" fill="none" stroke="#7dd3fc" stroke-width="2" />
+      <ellipse cx="15" cy="95" rx="13" ry="5.5" fill="none" stroke="#7dd3fc" stroke-width="2" />
+      <ellipse cx="15" cy="145" rx="15" ry="6.5" fill="#0284c7" stroke="#a5f3fc" stroke-width="2.5" />
+    </g>
+
+    <!-- Front Far-Right Column -->
+    <g transform="translate(345, 260)">
+      <line x1="15" y1="0" x2="15" y2="150" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" />
+      <line x1="15" y1="0" x2="15" y2="150" stroke="#ffffff" stroke-width="2.5" />
+      <ellipse cx="15" cy="40" rx="12" ry="5" fill="none" stroke="#7dd3fc" stroke-width="2" />
+      <ellipse cx="15" cy="90" rx="12" ry="5" fill="none" stroke="#7dd3fc" stroke-width="2" />
+      <ellipse cx="15" cy="140" rx="14" ry="6" fill="#0284c7" stroke="#a5f3fc" stroke-width="2.5" />
+    </g>
+
+    <!-- Diagonal Under-Deck Truss Bracing -->
+    <g stroke="#38bdf8" stroke-width="2" opacity="0.8">
+      <line x1="175" y1="280" x2="265" y2="380" />
+      <line x1="265" y1="280" x2="175" y2="380" />
+      <line x1="265" y1="280" x2="360" y2="380" />
+      <line x1="360" y1="280" x2="265" y2="380" />
+      <line x1="175" y1="350" x2="360" y2="350" stroke-width="3" stroke="#7dd3fc" />
+    </g>
+
+    <!-- Main Deck Decking Platform (Upper Glass Slab with Railing) -->
+    <g transform="translate(110, 240)">
+      <!-- Deck Ring/Disc Shape with glowing edge -->
+      <ellipse cx="146" cy="22" rx="155" ry="32" fill="#0f172a" fill-opacity="0.75" stroke="#38bdf8" stroke-width="3" />
+      <ellipse cx="146" cy="20" rx="155" ry="32" fill="none" stroke="#ffffff" stroke-width="1.5" />
+
+      <!-- Deck Perimeter Safety Railing Posts -->
+      <g stroke="#7dd3fc" stroke-width="1.5">
+        <line x1="20" y1="18" x2="20" y2="6" />
+        <line x1="50" y1="26" x2="50" y2="14" />
+        <line x1="90" y1="34" x2="90" y2="22" />
+        <line x1="146" y1="38" x2="146" y2="26" />
+        <line x1="202" y1="34" x2="202" y2="22" />
+        <line x1="242" y1="26" x2="242" y2="14" />
+        <line x1="272" y1="18" x2="272" y2="6" />
+        <!-- Rail Wire -->
+        <path d="M20,6 C90,26 202,26 272,6" fill="none" stroke="#a5f3fc" stroke-width="1.5" />
+      </g>
+    </g>
+
+    <!-- PRIMARY TALL DRILLING DERRICK TOWER (Right-Center) -->
+    <g transform="translate(262, 45)">
+      <!-- Main Tapered Derrick Legs -->
+      <line x1="32" y1="0" x2="2" y2="205" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" />
+      <line x1="32" y1="0" x2="2" y2="205" stroke="#ffffff" stroke-width="1.5" />
+      
+      <line x1="38" y1="0" x2="68" y2="205" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" />
+      <line x1="38" y1="0" x2="68" y2="205" stroke="#ffffff" stroke-width="1.5" />
+
+      <!-- Derrick Crown Block Top Cap -->
+      <rect x="26" y="-8" width="18" height="12" rx="2" fill="#a5f3fc" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Beaming Beacon Light at Crown -->
+      <circle cx="35" cy="-2" r="5" fill="#ffffff" filter="url(#intenseHoloGlow)" />
+
+      <!-- Derrick Horizontal Girts & Diagonal X-Braces -->
+      <g stroke="#38bdf8" stroke-width="1.5">
+        <!-- Level 1 (Top) -->
+        <line x1="28" y1="30" x2="42" y2="30" stroke="#a5f3fc" stroke-width="2" />
+        <line x1="31" y1="0" x2="42" y2="30" />
+        <line x1="39" y1="0" x2="28" y2="30" />
+
+        <!-- Level 2 -->
+        <line x1="23" y1="65" x2="47" y2="65" stroke="#a5f3fc" stroke-width="2" />
+        <line x1="28" y1="30" x2="47" y2="65" />
+        <line x1="42" y1="30" x2="23" y2="65" />
+
+        <!-- Level 3 -->
+        <line x1="17" y1="105" x2="53" y2="105" stroke="#a5f3fc" stroke-width="2" />
+        <line x1="23" y1="65" x2="53" y2="105" />
+        <line x1="47" y1="65" x2="17" y2="105" />
+
+        <!-- Level 4 -->
+        <line x1="11" y1="150" x2="59" y2="150" stroke="#a5f3fc" stroke-width="2" />
+        <line x1="17" y1="105" x2="59" y2="150" />
+        <line x1="53" y1="105" x2="11" y2="150" />
+
+        <!-- Level 5 (Bottom) -->
+        <line x1="5" y1="195" x2="65" y2="195" stroke="#a5f3fc" stroke-width="2.5" />
+        <line x1="11" y1="150" x2="65" y2="195" />
+        <line x1="59" y1="150" x2="5" y2="195" />
+      </g>
+
+      <!-- Center Drill String / Traveling Block Highlight -->
+      <line x1="35" y1="15" x2="35" y2="200" stroke="#ffffff" stroke-width="2" stroke-dasharray="8 4" />
+      <rect x="30" y="80" width="10" height="18" rx="2" fill="#7dd3fc" stroke="#fff" stroke-width="1" />
+    </g>
+
+    <!-- SECONDARY TOWER / FLARE BOOM DERRICK (Left) -->
+    <g transform="translate(195, 105)">
+      <line x1="20" y1="0" x2="0" y2="145" stroke="#38bdf8" stroke-width="3.5" />
+      <line x1="24" y1="0" x2="44" y2="145" stroke="#38bdf8" stroke-width="3.5" />
+      <rect x="18" y="-6" width="8" height="8" rx="1" fill="#7dd3fc" />
+
+      <g stroke="#38bdf8" stroke-width="1.2">
+        <line x1="16" y1="35" x2="28" y2="35" />
+        <line x1="20" y1="0" x2="28" y2="35" />
+        <line x1="24" y1="0" x2="16" y2="35" />
+
+        <line x1="11" y1="75" x2="33" y2="75" />
+        <line x1="16" y1="35" x2="33" y2="75" />
+        <line x1="28" y1="35" x2="11" y2="75" />
+
+        <line x1="6" y1="115" x2="38" y2="115" />
+        <line x1="11" y1="75" x2="38" y2="115" />
+        <line x1="33" y1="75" x2="6" y2="115" />
+      </g>
+    </g>
+
+    <!-- OFFSHORE PEDESTAL CRANE (Far Right Lattice Arm) -->
+    <g transform="translate(340, 160)">
+      <!-- Crane Pivot Base -->
+      <circle cx="15" cy="80" r="10" fill="#0284c7" stroke="#38bdf8" stroke-width="2" />
+      <!-- Crane Lattice Boom Jib extending outward -->
+      <line x1="15" y1="75" x2="90" y2="15" stroke="#38bdf8" stroke-width="3" />
+      <line x1="15" y1="85" x2="90" y2="20" stroke="#38bdf8" stroke-width="2.5" />
+      <!-- Crane Cable & Hook -->
+      <line x1="90" y1="18" x2="90" y2="70" stroke="#ffffff" stroke-width="1" stroke-dasharray="3 3" />
+      <circle cx="90" cy="72" r="3" fill="#f59e0b" />
+      <!-- Internal Crane Cross Braces -->
+      <line x1="30" y1="62" x2="36" y2="52" stroke="#7dd3fc" stroke-width="1" />
+      <line x1="50" y1="46" x2="56" y2="36" stroke="#7dd3fc" stroke-width="1" />
+      <line x1="70" y1="30" x2="76" y2="20" stroke="#7dd3fc" stroke-width="1" />
+    </g>
+
+    <!-- HELIDECK PLATFORM (Far Left Hexagonal Cantilever) -->
+    <g transform="translate(125, 220)">
+      <!-- Helideck Support Cantilever Beam -->
+      <line x1="30" y1="35" x2="0" y2="10" stroke="#38bdf8" stroke-width="3" />
+      <!-- Helideck Landing Pad Disc -->
+      <ellipse cx="0" cy="10" rx="28" ry="12" fill="#0f172a" fill-opacity="0.8" stroke="#38bdf8" stroke-width="2" />
+      <ellipse cx="0" cy="10" rx="18" ry="7" fill="none" stroke="#f59e0b" stroke-width="1.5" />
+      <text x="0" y="14" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="9">H</text>
+    </g>
+
+    <!-- Pipe Racks, Containers & Deck Modules -->
+    <g transform="translate(200, 240)">
+      <!-- Generator / Power Cabin Module -->
+      <rect x="10" y="2" width="30" height="16" rx="3" fill="#0369a1" stroke="#38bdf8" stroke-width="1.5" />
+      <!-- Mud Tank / Bulk Silo Cylinders -->
+      <rect x="46" y="-6" width="12" height="24" rx="4" fill="#0284c7" stroke="#a5f3fc" stroke-width="1.5" />
+      <rect x="62" y="-6" width="12" height="24" rx="4" fill="#0284c7" stroke="#a5f3fc" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <!-- High-Tech Neon Sparkle Accent Dots (Particles of Light) -->
+  <g fill="#ffffff">
+    <circle cx="297" cy="42" r="2.5" filter="url(#intenseHoloGlow)" />
+    <circle cx="340" cy="80" r="1.5" />
+    <circle cx="430" cy="178" r="2" filter="url(#intenseHoloGlow)" />
+    <circle cx="125" cy="230" r="1.5" />
+    <circle cx="218" cy="100" r="2" />
+    <circle cx="365" cy="400" r="1.5" />
+    <circle cx="150" cy="400" r="1.5" />
+  </g>
+
+  <!-- Outer Glass Frame Reflection Sheen -->
+  <path d="M72,120 C140,70 340,70 440,120" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.25" stroke-linecap="round" />
+</svg>

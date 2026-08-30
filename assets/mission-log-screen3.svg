@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 760" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mlBg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#091424" />
+      <stop offset="50%" stop-color="#050b14" />
+      <stop offset="100%" stop-color="#02050a" />
+    </linearGradient>
+    <linearGradient id="winCard3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#122038" />
+      <stop offset="100%" stop-color="#0a1220" />
+    </linearGradient>
+  </defs>
+
+  <!-- Frame -->
+  <rect width="360" height="760" rx="36" fill="url(#mlBg3)" stroke="#1e293b" stroke-width="3" />
+
+  <!-- Status Bar -->
+  <g fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">
+    <text x="24" y="28" font-weight="bold">09:45</text>
+    <text x="336" y="28" text-anchor="end">4G 100%</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(20, 42)">
+    <text x="0" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="15">بانک تجهیزات و اسناد فنی (Assets &amp; Docs)</text>
+    <!-- Search Bar Trigger -->
+    <rect x="280" y="4" width="40" height="30" rx="8" fill="#1e3a5f" />
+    <circle cx="298" cy="18" r="5" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="302" y1="22" x2="307" y2="27" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Category Filter Pills -->
+  <g transform="translate(20, 84)">
+    <rect width="90" height="32" rx="16" fill="#0284c7" />
+    <text x="45" y="20" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="11" text-anchor="middle">همه تجهیزات</text>
+
+    <g transform="translate(98, 0)">
+      <rect width="90" height="32" rx="16" fill="#0b1322" stroke="#1e293b" stroke-width="1" />
+      <text x="45" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">یونیت‌های CT</text>
+    </g>
+
+    <g transform="translate(196, 0)">
+      <rect width="124" height="32" rx="16" fill="#0b1322" stroke="#1e293b" stroke-width="1" />
+      <text x="62" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">گواهینامه‌ها و HSE</text>
+    </g>
+  </g>
+
+  <!-- Equipment List Card 1: Coiled Tubing Unit -->
+  <g transform="translate(20, 128)">
+    <rect width="320" height="135" rx="14" fill="url(#winCard3)" stroke="#1e3a5f" stroke-width="1.2" />
+    <g transform="translate(16, 16)">
+      <circle cx="16" cy="16" r="16" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+      <path d="M 11,16 L 15,20 L 21,12" stroke="#34d399" stroke-width="2" fill="none" />
+      
+      <text x="40" y="14" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="12.5">یونیت لوله‌مغزی سیار (CT Unit #12)</text>
+      <text x="40" y="28" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10">مدل: Stewart &amp; Stevenson • سریال: CT-9820</text>
+      
+      <g transform="translate(0, 42)">
+        <rect width="288" height="30" rx="6" fill="#08101c" />
+        <text x="10" y="19" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">آخرین بازرسی: ۱۴۰۵/۰۵/۲۵</text>
+        <text x="278" y="19" text-anchor="end" fill="#10b981" font-family="system-ui, sans-serif" font-weight="bold" font-size="10">سلامت فنی: ۹۸٪ (آماده‌به‌کار)</text>
+      </g>
+
+      <!-- Docs Attachment Tags -->
+      <g transform="translate(0, 80)">
+        <rect width="138" height="24" rx="6" fill="#1e293b" />
+        <text x="10" y="16" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">📄 گواهینامه کالیبراسیون API</text>
+        
+        <rect x="146" y="0" width="142" height="24" rx="6" fill="#1e293b" />
+        <text x="156" y="16" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">📘 دفترچه راهنمای تعمیرات</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Equipment List Card 2: High Pressure BOP Stack -->
+  <g transform="translate(20, 275)">
+    <rect width="320" height="135" rx="14" fill="url(#winCard3)" stroke="#1e3a5f" stroke-width="1.2" />
+    <g transform="translate(16, 16)">
+      <circle cx="16" cy="16" r="16" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
+      <circle cx="16" cy="16" r="6" fill="#38bdf8" />
+      
+      <text x="40" y="14" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="12.5">مجموعه فوران‌گیر لوله‌مغزی (Quad BOP 10K)</text>
+      <text x="40" y="28" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10">فشار اسمی: 10,000 PSI • سایز: 3-1/16 in</text>
+      
+      <g transform="translate(0, 42)">
+        <rect width="288" height="30" rx="6" fill="#08101c" />
+        <text x="10" y="19" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">تست هیدرواستاتیک: مورد تایید</text>
+        <text x="278" y="19" text-anchor="end" fill="#38bdf8" font-family="system-ui, sans-serif" font-weight="bold" font-size="10">مستقر در دکل ۳۴ فتح</text>
+      </g>
+
+      <g transform="translate(0, 80)">
+        <rect width="138" height="24" rx="6" fill="#1e293b" />
+        <text x="10" y="16" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">📑 سرتیفیکیت بازرسی NDT</text>
+        
+        <rect x="146" y="0" width="142" height="24" rx="6" fill="#1e293b" />
+        <text x="156" y="16" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">🔒 پروتکل‌های ایمنی HSE</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Multi-language Support Banner & Calculator -->
+  <g transform="translate(20, 422)">
+    <rect width="320" height="165" rx="14" fill="url(#winCard3)" stroke="#10b981" stroke-width="1.2" />
+    <g transform="translate(16, 16)">
+      <text x="0" y="14" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="13">پشتیبانی چندزبانه و ماشین‌حساب مهندسی</text>
+      
+      <!-- 5 Language Badges -->
+      <g transform="translate(0, 30)">
+        <rect width="52" height="26" rx="6" fill="#0284c7" />
+        <text x="26" y="17" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">فارسی</text>
+
+        <rect x="58" y="0" width="52" height="26" rx="6" fill="#1e293b" />
+        <text x="84" y="17" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">English</text>
+
+        <rect x="116" y="0" width="52" height="26" rx="6" fill="#1e293b" />
+        <text x="142" y="17" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">العربية</text>
+
+        <rect x="174" y="0" width="52" height="26" rx="6" fill="#1e293b" />
+        <text x="200" y="17" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">Français</text>
+
+        <rect x="232" y="0" width="56" height="26" rx="6" fill="#1e293b" />
+        <text x="260" y="17" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">中文</text>
+      </g>
+
+      <!-- Calculator & Tools Row -->
+      <g transform="translate(0, 70)">
+        <rect width="288" height="54" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+        <text x="12" y="22" fill="#34d399" font-family="system-ui, sans-serif" font-weight="bold" font-size="11.5">🧮 ماشین‌حساب پیشرفته مهندسی و محاسبات سریع</text>
+        <text x="12" y="40" fill="#ecfdf5" font-family="system-ui, sans-serif" font-size="10">محاسبه حجم چاه، تبدیل واحدها و ارسال هشدار خودکار لاگ‌ها</text>
+      </g>
+    </g>
+  </g>
+</svg>

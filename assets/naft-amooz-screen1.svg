@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 780" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Amber Gold Accent Gradient -->
+    <linearGradient id="goldButtonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#131d2e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Phone Frame & Background -->
+  <rect width="380" height="780" rx="36" fill="url(#bgGrad1)" stroke="#334155" stroke-width="4" />
+
+  <!-- Status Bar -->
+  <text x="30" y="24" fill="#cbd5e1" font-size="11" font-family="sans-serif" font-weight="bold">11:14</text>
+  <text x="350" y="24" text-anchor="end" fill="#cbd5e1" font-size="11" font-family="sans-serif">4G  100% 🔋</text>
+
+  <!-- Top App Navigation Header -->
+  <g transform="translate(18, 40)">
+    <!-- Search Button -->
+    <rect x="0" y="0" width="38" height="38" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle cx="17" cy="17" r="6" fill="none" stroke="#94a3b8" stroke-width="2" />
+    <line x1="22" y1="22" x2="27" y2="27" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+
+    <!-- App Brand Pill with Hamburger Menu -->
+    <g transform="translate(244, 0)">
+      <rect width="100" height="38" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="54" y="24" text-anchor="end" fill="#f8fafc" font-size="12" font-family="sans-serif" font-weight="bold">نفت آموز</text>
+      <!-- Gold Menu Icon -->
+      <rect x="62" y="6" width="28" height="26" rx="8" fill="#f59e0b" />
+      <line x1="68" y1="14" x2="84" y2="14" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="68" y1="19" x2="84" y2="19" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="68" y1="24" x2="84" y2="24" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- Hero Academy Badge -->
+  <g transform="translate(18, 98)">
+    <rect x="25" y="0" width="294" height="28" rx="14" fill="#451a03" stroke="#f59e0b" stroke-width="1" opacity="0.9" />
+    <text x="172" y="18" text-anchor="middle" fill="#fbbf24" font-size="10.5" font-family="sans-serif" font-weight="bold">🔥 آکادمی تخصصی نفت، گاز و پتروشیمی نفت آموز</text>
+  </g>
+
+  <!-- Hero Main Heading -->
+  <text x="344" y="160" text-anchor="end" fill="#f8fafc" font-size="16" font-family="sans-serif" font-weight="900">یادگیری تخصصی مهندسی نفت، گاز و</text>
+  <text x="344" y="186" text-anchor="end" fill="#f8fafc" font-size="16" font-family="sans-serif" font-weight="900">پالایش</text>
+
+  <!-- Hero Description -->
+  <text x="344" y="218" text-anchor="end" fill="#94a3b8" font-size="10" font-family="sans-serif">از مبانی بالادستی تا پالایشگاه، پتروشیمی، تجهیزات دوار و ابزار دقیق با</text>
+  <text x="344" y="234" text-anchor="end" fill="#94a3b8" font-size="10" font-family="sans-serif">استاندارد صنعتی و محتوای معتبر علمی</text>
+
+  <!-- Primary Golden Action Button -->
+  <g transform="translate(18, 255)">
+    <rect width="344" height="46" rx="23" fill="url(#goldButtonGrad)" />
+    <text x="172" y="28" text-anchor="middle" fill="#0f172a" font-size="13" font-family="sans-serif" font-weight="bold">مشاهده دوره‌های تخصصی  ←</text>
+  </g>
+
+  <!-- Secondary Buttons Grid -->
+  <g transform="translate(18, 312)">
+    <!-- Button: Login as Guest -->
+    <rect x="178" y="0" width="166" height="42" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="261" y="26" text-anchor="middle" fill="#cbd5e1" font-size="11.5" font-family="sans-serif">✨ ورود به‌عنوان میهمان</text>
+
+    <!-- Button: Practice Exam -->
+    <rect x="0" y="0" width="166" height="42" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="83" y="26" text-anchor="middle" fill="#cbd5e1" font-size="11.5" font-family="sans-serif">آزمون آزمایشی نفت</text>
+  </g>
+
+  <!-- Full-Width Secondary Button: Calculations & Converters -->
+  <g transform="translate(18, 364)">
+    <rect width="344" height="42" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="172" y="26" text-anchor="middle" fill="#cbd5e1" font-size="11.5" font-family="sans-serif">🧮 محاسبات و مبدل واحدها</text>
+  </g>
+
+  <!-- Subtle Informational Notice -->
+  <g transform="translate(18, 420)">
+    <text x="344" y="0" text-anchor="end" fill="#64748b" font-size="9" font-family="sans-serif">برای مطالعه نیازی به ثبت‌نام نیست (ورود سریع فقط برای همگام‌سازی پیشرفت،</text>
+    <text x="344" y="14" text-anchor="end" fill="#64748b" font-size="9" font-family="sans-serif">کاربر ویژه و دریافت امکانات تخصصی اختیاری است)</text>
+  </g>
+
+  <!-- Study In-Progress Card (در حال مطالعه) -->
+  <g transform="translate(18, 470)">
+    <rect width="344" height="260" rx="24" fill="url(#cardGrad1)" stroke="#334155" stroke-width="1" />
+    
+    <!-- Top Tags inside card -->
+    <rect x="236" y="16" width="92" height="26" rx="13" fill="#451a03" stroke="#f59e0b" stroke-width="0.8" />
+    <text x="282" y="33" text-anchor="middle" fill="#fbbf24" font-size="10.5" font-weight="bold">در حال مطالعه</text>
+
+    <text x="24" y="33" fill="#94a3b8" font-size="10.5">⏱️ ۱۰۰ دقیقه</text>
+
+    <!-- Card Title -->
+    <text x="328" y="76" text-anchor="end" fill="#f8fafc" font-size="14.5" font-family="sans-serif" font-weight="bold">آشنایی جامع با صنعت نفت و گاز</text>
+    
+    <!-- Card Subtitle -->
+    <text x="328" y="104" text-anchor="end" fill="#94a3b8" font-size="10" font-family="sans-serif">جامع‌ترین دوره معرفی زنجیره ارزش صنعت نفت از اکتشاف اولیه،</text>
+    <text x="328" y="120" text-anchor="end" fill="#94a3b8" font-size="10" font-family="sans-serif">زیرسطحی تا پالایش، پتروشیمی، توزیع و عرضه محصولات نهایی</text>
+
+    <!-- Progress Tracker -->
+    <text x="328" y="152" text-anchor="end" fill="#cbd5e1" font-size="10">پیشرفت من</text>
+    <text x="24" y="152" fill="#f59e0b" font-size="11" font-weight="bold">16%</text>
+
+    <!-- Progress Bar -->
+    <rect x="24" y="162" width="296" height="10" rx="5" fill="#0f172a" />
+    <rect x="230" y="162" width="90" height="10" rx="5" fill="#f59e0b" />
+
+    <!-- Action Arrow Button & Instructor -->
+    <text x="328" y="215" text-anchor="end" fill="#64748b" font-size="10">مهندسین نفت</text>
+    
+    <g transform="translate(24, 192)">
+      <rect width="52" height="38" rx="14" fill="#f59e0b" />
+      <text x="26" y="24" text-anchor="middle" fill="#0f172a" font-size="16" font-weight="bold">←</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 780" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hubBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#07090e" />
+    </linearGradient>
+    <linearGradient id="goldBox" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="gridCard1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Frame -->
+  <rect width="380" height="780" rx="36" fill="url(#hubBg)" stroke="#1e293b" stroke-width="3" />
+  
+  <!-- Status Bar -->
+  <text x="28" y="28" fill="#94a3b8" font-size="11" font-family="sans-serif" font-weight="600">19:43</text>
+  <circle cx="340" cy="24" r="3" fill="#10b981" />
+  <rect x="350" y="20" width="14" height="8" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.5" />
+  <rect x="352" y="22" width="9" height="4" fill="#94a3b8" />
+
+  <!-- Top Hero Header with Gold CT Logo -->
+  <g transform="translate(18, 42)">
+    <rect width="344" height="78" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    
+    <!-- CT Logo Badge -->
+    <rect x="270" y="14" width="56" height="50" rx="12" fill="url(#goldBox)" />
+    <text x="298" y="46" fill="#0f172a" font-size="22" font-family="sans-serif" font-weight="900" text-anchor="middle">CT</text>
+    
+    <!-- Header Title -->
+    <text x="256" y="36" fill="#fbbf24" font-size="15" font-family="sans-serif" font-weight="900" text-anchor="end">CT NEXUS</text>
+    <text x="256" y="54" fill="#94a3b8" font-size="10" font-family="sans-serif" font-weight="600" text-anchor="end">پایگاه محاسبات و عملیات لوله‌مغزی سیار</text>
+
+    <!-- Quick Switcher Icons -->
+    <g transform="translate(20, 24)">
+      <rect x="0" y="0" width="32" height="30" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <rect x="7" y="6" width="6" height="6" rx="1" fill="#fbbf24" />
+      <rect x="17" y="6" width="6" height="6" rx="1" fill="#fbbf24" />
+      <rect x="7" y="16" width="6" height="6" rx="1" fill="#fbbf24" />
+      <rect x="17" y="16" width="6" height="6" rx="1" fill="#fbbf24" />
+
+      <rect x="42" y="0" width="32" height="30" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <path d="M 52,10 L 64,10 L 64,22 L 52,22 Z" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(18, 132)">
+    <rect width="344" height="42" rx="12" fill="#111827" stroke="#1e293b" />
+    <text x="324" y="26" fill="#475569" font-size="10" font-family="sans-serif" text-anchor="end">جستجوی سریع ماژول‌ها، فرمول‌ها و ابزارها...</text>
+    <circle cx="34" cy="21" r="6" fill="none" stroke="#64748b" stroke-width="1.5" />
+    <line x1="39" y1="26" x2="44" y2="31" stroke="#64748b" stroke-width="1.5" />
+  </g>
+
+  <!-- 2-Column Grid of Modules (matching user's screenshot 3) -->
+  <g transform="translate(18, 186)">
+    
+    <!-- Row 1: Right (Rig Floor) & Left (BHA Management) -->
+    <!-- Right Card (Rig Floor) -->
+    <g transform="translate(178, 0)">
+      <rect width="166" height="126" rx="16" fill="url(#gridCard1)" stroke="#854d0e" stroke-width="1" />
+      <!-- Icon Top Right -->
+      <rect x="110" y="14" width="42" height="42" rx="12" fill="#854d0e" opacity="0.3" />
+      <path d="M 132,23 L 126,33 L 132,33 L 128,43 L 138,31 L 131,31 Z" fill="#fbbf24" />
+      <text x="150" y="80" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="end">پنل عملیاتی سریع</text>
+      <text x="150" y="96" fill="#94a3b8" font-size="9" font-family="sans-serif" text-anchor="end">(Rig Floor)</text>
+      <text x="150" y="114" fill="#fbbf24" font-size="9" font-weight="600" text-anchor="end">ورود به ماژول ←</text>
+    </g>
+
+    <!-- Left Card (BHA Management) -->
+    <g transform="translate(0, 0)">
+      <rect width="166" height="126" rx="16" fill="url(#gridCard1)" stroke="#1e3a8a" stroke-width="1" />
+      <rect x="110" y="14" width="42" height="42" rx="12" fill="#1e3a8a" opacity="0.3" />
+      <rect x="123" y="26" width="16" height="4" rx="1" fill="#38bdf8" />
+      <rect x="123" y="34" width="16" height="4" rx="1" fill="#38bdf8" />
+      <text x="150" y="80" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="end">مدیریت BHA و عملیات</text>
+      <text x="150" y="96" fill="#94a3b8" font-size="9" font-family="sans-serif" text-anchor="end">چیدمان رشته ابزار</text>
+      <text x="150" y="114" fill="#38bdf8" font-size="9" font-weight="600" text-anchor="end">ورود به ماژول ←</text>
+    </g>
+
+    <!-- Row 2: Right (Well Geometry) & Left (Hydraulics) -->
+    <!-- Right Card (Well Geometry) -->
+    <g transform="translate(178, 138)">
+      <rect width="166" height="126" rx="16" fill="url(#gridCard1)" stroke="#065f46" stroke-width="1" />
+      <rect x="110" y="14" width="42" height="42" rx="12" fill="#065f46" opacity="0.3" />
+      <circle cx="131" cy="35" r="10" fill="none" stroke="#34d399" stroke-width="2" />
+      <text x="150" y="80" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="end">هندسه چاه و دالیز</text>
+      <text x="150" y="96" fill="#94a3b8" font-size="9" font-family="sans-serif" text-anchor="end">احجام حلقوی و ظرفیت</text>
+      <text x="150" y="114" fill="#34d399" font-size="9" font-weight="600" text-anchor="end">ورود به ماژول ←</text>
+    </g>
+
+    <!-- Left Card (Hydraulics) -->
+    <g transform="translate(0, 138)">
+      <rect width="166" height="126" rx="16" fill="url(#gridCard1)" stroke="#0e7490" stroke-width="1" />
+      <rect x="110" y="14" width="42" height="42" rx="12" fill="#0e7490" opacity="0.3" />
+      <path d="M 120,35 L 126,35 L 129,28 L 133,42 L 137,35 L 142,35" fill="none" stroke="#22d3ee" stroke-width="2" />
+      <text x="150" y="80" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="end">هیدرولیک و اصطکاک</text>
+      <text x="150" y="96" fill="#94a3b8" font-size="9" font-family="sans-serif" text-anchor="end">افت فشار و سرعت بحرانی</text>
+      <text x="150" y="114" fill="#22d3ee" font-size="9" font-weight="600" text-anchor="end">ورود به ماژول ←</text>
+    </g>
+
+    <!-- Row 3: Right (Cementing) & Left (Acidizing) -->
+    <!-- Right Card (Cementing) -->
+    <g transform="translate(178, 276)">
+      <rect width="166" height="126" rx="16" fill="url(#gridCard1)" stroke="#9a3412" stroke-width="1" />
+      <rect x="110" y="14" width="42" height="42" rx="12" fill="#9a3412" opacity="0.3" />
+      <text x="131" y="41" fill="#fb923c" font-size="18" font-weight="bold" text-anchor="middle">⚖️</text>
+      <text x="150" y="80" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="end">سیمان‌کاری و پلاگ</text>
+      <text x="150" y="96" fill="#94a3b8" font-size="9" font-family="sans-serif" text-anchor="end">پلاگ تعادل و اسپیسر</text>
+      <text x="150" y="114" fill="#fb923c" font-size="9" font-weight="600" text-anchor="end">ورود به ماژول ←</text>
+    </g>
+
+    <!-- Left Card (Acidizing) -->
+    <g transform="translate(0, 276)">
+      <rect width="166" height="126" rx="16" fill="url(#gridCard1)" stroke="#831843" stroke-width="1" />
+      <rect x="110" y="14" width="42" height="42" rx="12" fill="#831843" opacity="0.3" />
+      <text x="131" y="41" fill="#f472b6" font-size="18" font-weight="bold" text-anchor="middle">🔥</text>
+      <text x="150" y="80" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="end">اسیدکاری و شستشو</text>
+      <text x="150" y="96" fill="#94a3b8" font-size="9" font-family="sans-serif" text-anchor="end">ماتریکس و خوردگی</text>
+      <text x="150" y="114" fill="#f472b6" font-size="9" font-weight="600" text-anchor="end">ورود به ماژول ←</text>
+    </g>
+
+    <!-- Row 4: Fluid Displacement / Bottom Row -->
+    <g transform="translate(178, 414)">
+      <rect width="166" height="120" rx="16" fill="url(#gridCard1)" stroke="#581c87" stroke-width="1" />
+      <text x="150" y="76" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="end">جابجایی سیالات و پین‌ها</text>
+      <text x="150" y="104" fill="#c084fc" font-size="9" font-weight="600" text-anchor="end">ورود به ماژول ←</text>
+    </g>
+
+    <g transform="translate(0, 414)">
+      <rect width="166" height="120" rx="16" fill="url(#gridCard1)" stroke="#14532d" stroke-width="1" />
+      <text x="150" y="76" fill="#f8fafc" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="end">احیاء چاه با نیتروژن</text>
+      <text x="150" y="104" fill="#4ade80" font-size="9" font-weight="600" text-anchor="end">ورود به ماژول ←</text>
+    </g>
+
+  </g>
+</svg>
