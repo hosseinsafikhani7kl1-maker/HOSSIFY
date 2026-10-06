@@ -5,7 +5,8 @@ import { extname, join, normalize, resolve } from 'node:path';
 const root = resolve(process.cwd());
 const contentType = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.svg': 'image/svg+xml' };
 createServer(async (request, response) => {
-  const requested = request.url === '/' ? 'index.html' : request.url.split('?')[0].replace(/^[/\\]+/, '');
+  const pathname = new URL(request.url, 'http://localhost').pathname;
+  const requested = pathname === '/' ? 'index.html' : pathname.replace(/^[/\\]+/, '');
   const file = join(root, normalize(requested).replace(/^([.]{2}[\\/])+/, ''));
   if (!file.startsWith(root)) return response.writeHead(403).end('Forbidden');
   let body;
