@@ -72,9 +72,6 @@ a { text-decoration: none; color: inherit; }
 .mini-button { border: 1px solid #d6e5ef; background: #fff; color: #196e9e; border-radius: 10px; padding: 7px 9px; font-size: 10px; font-weight: 800; }
 .mini-button.primary { background: #0e9d75; color: white; border-color: #0e9d75; }
 .status-pill { display: inline-flex; align-items: center; justify-content: center; padding: 7px 9px; border-radius: 10px; background: #fff5df; color: #77520a; border: 1px solid #efd99f; font-size: 10px; font-weight: 800; }
-.status-pill.preview { background: #edf4ff; color: #244f87; border-color: #cfdef6; }
-.preview-notice { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin-bottom: 18px; padding: 12px 14px; border: 1px solid #cfdef6; border-radius: 12px; background: #edf4ff; color: #244f87; font-size: 11px; line-height: 1.8; }
-.preview-notice b { font-weight: 900; }
 .empty { grid-column: 1 / -1; color: var(--muted); padding: 35px; text-align: center; border: 1px dashed var(--line); border-radius: 16px; background: var(--paper); line-height: 1.9; }
 
 .split { display: grid; grid-template-columns: 1.05fr .95fr; gap: 17px; align-items: stretch; }

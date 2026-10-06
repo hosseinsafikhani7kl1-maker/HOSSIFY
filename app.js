@@ -1,10 +1,8 @@
 const catalog = Array.isArray(window.HOSSIFY_APPS) ? window.HOSSIFY_APPS : [];
-const previewId = new URLSearchParams(window.location.search).get('preview');
-const previewApp = catalog.find((app) => String(app.id) === previewId && app.status === 'draft');
-const visibleCatalog = previewApp ? [previewApp] : catalog.filter((app) => app.status !== 'draft');
+const visibleCatalog = catalog.filter((app) => app.status !== 'draft');
 const analyticsEndpoint = String(window.HOSSIFY_ANALYTICS?.endpoint || '').replace(/\/$/, '');
 let language = localStorage.getItem('hossify-language') === 'en' ? 'en' : 'fa';
-let activeView = previewApp ? 'apps' : 'home';
+let activeView = 'home';
 let activeCategory = 'all';
 
 const copy = {
@@ -19,8 +17,6 @@ const copy = {
     products: 'برنامه‌های HOSSIFY',
     productsText: 'یک برنامه را انتخاب کنید تا جزئیات، تصاویر محیط و لینک مایکت آن را ببینید.',
     all: 'همهٔ دسته‌ها', details: 'جزئیات', myket: 'مشاهده در مایکت', comingSoon: 'به‌زودی',
-    previewOnly: 'پیش‌نمایش', previewNotice: 'این برنامه هنوز منتشر نشده است و فقط در این نشانی پیش‌نمایش دیده می‌شود.',
-    previewHeading: 'پیش‌نمایش برنامه',
     emptyCatalog: 'هنوز برنامه‌ای در کاتالوگ منتشر نشده است. فهرست برنامه‌ها پس از انتشار از طریق HOSSIFY Site Manager در اینجا نمایش داده می‌شود.',
     why: 'رویکرد HOSSIFY', whyText: 'کیفیت محصول برای ما یعنی قابلیت استفادهٔ روشن، محتوای دقیق و تجربه‌ای آرام در محیط کار.',
     how: 'سه گام تا ابزار مناسب', howText: 'بدون صفحه‌های بلند و پراکنده؛ مسیر سایت کوتاه و مستقیم است.',
@@ -40,8 +36,6 @@ const copy = {
     heroText: 'A focused collection of educational, engineering and operational mobile applications for oil & gas and technical environments. Every product is built around a specific purpose.',
     catalog: 'Explore all apps', contact: 'Contact HOSSIFY', products: 'HOSSIFY applications', productsText: 'Select a product to view its overview, screenshots and Myket link.',
     all: 'All categories', details: 'Details', myket: 'View on Myket', comingSoon: 'Coming soon',
-    previewOnly: 'Preview', previewNotice: 'This app is not published yet. It is visible only in this preview.',
-    previewHeading: 'App preview',
     emptyCatalog: 'No apps have been published yet. Apps will appear here after they are published through HOSSIFY Site Manager.',
     why: 'The HOSSIFY approach', whyText: 'For us, product quality means a clear purpose, credible content and a calm experience at work.',
     how: 'Three steps to the right tool', howText: 'No endless scrolling. The path through the catalog stays short and direct.',
@@ -106,10 +100,9 @@ function page() {
 
 function homePage() {
   const featured = visibleCatalog[0];
-  const featuredState = featured?.status === 'draft' ? t().previewOnly : featured && isComingSoon(featured) ? t().comingSoon : '';
-  const featuredStateClass = featured?.status === 'draft' ? 'preview' : 'soon';
+  const featuredState = featured && isComingSoon(featured) ? t().comingSoon : '';
   return `<div class="view hero"><div class="hero-copy"><div class="eyebrow">${t().eyebrow}</div><h1>${t().heroTitle}</h1><p>${t().heroText}</p><div class="hero-actions"><button class="cta primary" data-action="view" data-view="apps">${t().catalog} ←</button><button class="cta ghost" data-action="view" data-view="support">${t().contact}</button></div><div class="metrics"><div class="metric"><strong>${visibleCatalog.length}</strong><span>${t().statApps}</span></div><div class="metric"><strong>100%</strong><span>${t().statFocus}</span></div><div class="metric"><strong>MYKET</strong><span>${t().statMarket}</span></div></div></div></div>
-    ${featured ? `<div class="view" style="padding-bottom:0"><div class="section-heading"><div><h2>${language === 'fa' ? 'محصول منتخب' : 'Featured product'}</h2><p>${escapeHtml(value(featured, 'tagline'))}</p>${featuredState ? `<span class="status-pill ${featuredStateClass}" role="status">${featuredState}</span>` : ''}</div><button class="mini-button" data-action="detail" data-id="${featured.id}">${t().details}</button></div></div>` : ''}`;
+    ${featured ? `<div class="view" style="padding-bottom:0"><div class="section-heading"><div><h2>${language === 'fa' ? 'محصول منتخب' : 'Featured product'}</h2><p>${escapeHtml(value(featured, 'tagline'))}</p>${featuredState ? `<span class="status-pill soon" role="status">${featuredState}</span>` : ''}</div><button class="mini-button" data-action="detail" data-id="${featured.id}">${t().details}</button></div></div>` : ''}`;
 }
 
 function appsPage() {
@@ -119,18 +112,15 @@ function appsPage() {
   const content = visibleCatalog.length
     ? visible.length ? visible.map(appCard).join('') : `<div class="empty">${t().noApps}</div>`
     : `<div class="empty">${t().emptyCatalog}</div>`;
-  const notice = previewApp ? `<div class="preview-notice" role="status"><b>${t().previewHeading}</b><span>${t().previewNotice}</span></div>` : '';
-  return `<div class="view">${notice}<div class="section-heading"><div><h1>${t().products}</h1><p>${t().productsText}</p></div>${filter}</div><div class="apps-grid">${content}</div></div>`;
+  return `<div class="view"><div class="section-heading"><div><h1>${t().products}</h1><p>${t().productsText}</p></div>${filter}</div><div class="apps-grid">${content}</div></div>`;
 }
 
 function appCard(app) {
-  const preview = app.status === 'draft';
   const comingSoon = isComingSoon(app);
-  const stateLabel = preview ? t().previewOnly : comingSoon ? t().comingSoon : '';
-  const stateClass = preview ? 'preview' : 'soon';
+  const stateLabel = comingSoon ? t().comingSoon : '';
   const myket = canDownload(app) && app.myketUrl ? `<a class="mini-button primary" href="${escapeHtml(app.myketUrl)}" target="_blank" rel="noopener">${language === 'fa' ? 'مایکت ↗' : 'Myket ↗'}</a>` : '';
   const direct = directDownloadButton(app, 'mini-button');
-  const state = stateLabel ? `<span class="status-pill ${stateClass}" role="status">${stateLabel}</span>` : '';
+  const state = stateLabel ? `<span class="status-pill soon" role="status">${stateLabel}</span>` : '';
   return `<article class="app-card"><div class="app-card-head">${app.icon ? `<img class="app-icon" src="${escapeHtml(asset(app.icon))}" alt="">` : '<div class="app-icon placeholder">📱</div>'}<div><h3>${escapeHtml(value(app, 'name'))}</h3><small>${escapeHtml(value(app, 'version'))}</small></div></div><span class="tag">${escapeHtml(value(app, 'category'))}</span><p>${escapeHtml(value(app, 'tagline'))}</p><div class="card-actions"><button class="mini-button" data-action="detail" data-id="${app.id}">${t().details}</button>${myket}${direct}${state}</div></article>`;
 }
 
@@ -149,9 +139,7 @@ function modal(app) {
   const features = (app.features || []).map((feature) => `<li>${escapeHtml(value({ feature }, 'feature'))}</li>`).join('');
   const myket = canDownload(app) && app.myketUrl ? `<a class="myket" href="${escapeHtml(app.myketUrl)}" target="_blank" rel="noopener">${t().myket} ↗</a>` : '';
   const direct = directDownloadButton(app, 'myket');
-  const stateLabel = app.status === 'draft' ? t().previewOnly : isComingSoon(app) ? t().comingSoon : '';
-  const stateClass = app.status === 'draft' ? 'preview' : 'soon';
-  const noLink = !myket && !direct ? `<span class="status-pill ${stateClass}" role="status">${stateLabel || t().comingSoon}</span>` : '';
+  const noLink = !myket && !direct ? `<span class="status-pill soon" role="status">${t().comingSoon}</span>` : '';
   return `<div class="modal-backdrop" data-action="close-modal"><article class="modal" data-modal><button class="modal-close" data-action="close-modal">× ${t().close}</button><header class="modal-hero" style="background:linear-gradient(130deg,#071c33,${escapeHtml(app.color || '#1688d1')})"><div class="modal-title">${app.icon ? `<img class="app-icon" src="${escapeHtml(asset(app.icon))}" alt="">` : '<div class="app-icon placeholder">📱</div>'}<div><h2>${escapeHtml(value(app, 'name'))}</h2><p>${escapeHtml(value(app, 'tagline'))}</p></div></div></header><div class="modal-body">${shots ? `<h3>${t().modalShots}</h3><div class="shot-strip">${shots}</div>` : ''}<h3>${t().modalAbout}</h3><p class="modal-description">${escapeHtml(value(app, 'description'))}</p><div class="details-grid"><div class="detail"><b>${t().version}</b><span>${escapeHtml(value(app, 'version'))}</span></div><div class="detail"><b>${t().size}</b><span>${escapeHtml(value(app, 'size'))}</span></div><div class="detail"><b>${t().rating}</b><span>★ ${escapeHtml(app.rating || '—')}</span></div><div class="detail"><b>${t().downloads}</b><span>${escapeHtml(value(app, 'downloads'))}</span></div></div>${features ? `<h3>${t().modalFeatures}</h3><ul class="modal-features">${features}</ul>` : ''}<div class="modal-actions">${myket}${direct}${noLink}</div></div></article></div>`;
 }
 
